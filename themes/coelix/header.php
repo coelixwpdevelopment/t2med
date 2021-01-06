@@ -30,7 +30,7 @@
                 <div class="languages">
                     <div class="lang-option">
                         <div class="lang-items">
-                            <div class="he">
+                            <div class="lang-he">
                                 <svg class="svg-isr" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
                                     xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512"
                                     style="enable-background:new 0 0 512 512;" xml:space="preserve">
@@ -80,7 +80,7 @@
                                 <div class="he">HE</div>
                             </div>
                             <div class="en">
-
+                             
                             </div>
                         </div>
                         <div class="arrow-down"></div>
@@ -109,7 +109,7 @@
                     </ul>
                 </nav>
                 <div class="logo">
-                    <div class="logo__item">
+                    <div class="logo__item-1">
                         <svg сlass="svg-stet" width="35" height="44" viewBox="0 0 35 44" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M16.5299 23.5416C16.5299 23.5416 18.209 21.9923 19.6642 19.5739C21.1194 17.1555 20.5597 16.3242 22.2015 15.115C22.2015 15.115 24.2164 11.2607 24.5896 4.61007C24.5896 4.61007 24.0672 2.75849 22.4627 2.75849C22.4627 2.75849 21.6418 2.60734 21.2313 3.023C21.2313 3.023 20.8209 3.6276 19.403 3.6276C17.9851 3.6276 17.0149 2.7207 17.0149 2.7207C17.0149 2.7207 16.6418 1.66265 17.0522 1.2092C17.4627 0.75575 17.7985 0.340087 17.7985 0.340087C17.7985 0.340087 19.0299 0 19.4403 0C19.8507 0 20.5597 0.113362 21.2313 0.75575C21.2313 0.75575 22.7612 0.45345 24.291 0.944687C25.8209 1.43592 26.306 2.75849 26.6791 3.70317V7.59529C26.6791 7.59529 25.597 12.6966 24.4776 15.9085C24.4776 15.9085 24.7761 16.6643 24.4403 17.7223C24.0672 18.7426 21.6045 23.2771 20.6716 24.1084C19.7388 24.9397 18.209 26.6402 16.5672 28.0761C14.9254 29.512 15.2612 30.0411 15.2612 30.0411H13.7313V23.0126C13.694 23.0126 15.1119 22.8614 16.5299 23.5416Z"
@@ -148,7 +148,7 @@
                         <img src="http://t2med/wp-content/uploads/2021/01/T2MED.png" alt="">
                              
                     </div>
-                    <div class="logo__item">
+                    <div class="logo__item-2">
                        <img src="http://t2med/wp-content/uploads/2021/01/Medicine_Heb-1-1.png" alt="">
                     </div>
                 </div>
