@@ -9,12 +9,12 @@ const sourcemaps = require('gulp-sourcemaps');
 
 function browsersync() {
   browserSync.init({
-    proxy: "http://project-name.loc"
+    proxy: "http://t2med"
   });
 }
 
 function scss() {
-  return src(['assets/scss/main.scss', 'assets/scss/styles.scss'])
+  return src('assets/scss/main.scss')
     .pipe(sourcemaps.init())
       .pipe(sass().on('error', sass.logError))
       .pipe(cssnano())
