@@ -18,6 +18,11 @@ get_header();
 
 <main id="primary" class="site-main">
 
+    <section class="section-one">
+		<div class="container">
+			
+		</div>
+	</section>	 
 
     <section class="section-three">
         <div class="container">
@@ -292,6 +297,40 @@ get_header();
 	<section class="section-eight">
 		<div class="container">
 			<h2 class="title__contact">contact us</h2>
+			 <div class="contact-block">
+				 <div class="contact-block__left-position">
+                    <div class="contact-background">
+						<div class="top-left">
+							<img  src="http://t2med/wp-content/uploads/2021/01/figure-contact__top-left.png" alt="">
+						</div>
+						<div class="bottom-left">
+							<img src="http://t2med/wp-content/uploads/2021/01/figure-contact__bottom-left.png" alt="">
+						</div>
+					</div>
+					<div class="contact-block__info">
+						<ul class="contact-block__info-item">
+							<li class="contact-block__info-mail">
+                              <a href="mailto:team@t2med.co.il">team@t2med.co.il</a>
+							</li>
+							<li class="contact-block__info-text">
+								<p>Rappaport Faculty of Medicine of the Technion <br> 1 Efron St. Bat Galim, Haifa</p>
+							</li>
+							<li class="contact-block__info-facebook">
+								<a href="">our facebook</a>
+							</li>
+						</ul>
+					</div>
+				 </div>
+				 <div class="contact-block__right-position">
+					<iframe class="google-maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3352.4149401412983!2d34.98161051567436!3d32.834263580954755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151dbbd0803422e7%3A0x4bc667f2ea55e771!2sThe%20Ruth%20and%20Bruce%20Rappaport%20Faculty%20of%20Medicine!5e0!3m2!1sru!2sua!4v1610111361652!5m2!1sru!2sua" 
+						frameborder="0" 
+						style="border:0;" 
+						allowfullscreen="" 
+						aria-hidden="false" 
+						tabindex="0">
+					</iframe>
+				 </div>
+			 </div>
 		</div>
 	</section>
 </main>
