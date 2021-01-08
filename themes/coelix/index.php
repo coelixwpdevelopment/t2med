@@ -289,6 +289,11 @@ get_header();
 		</div>
 	</section>
 
+	<section class="section-eight">
+		<div class="container">
+			<h2 class="title__contact">contact us</h2>
+		</div>
+	</section>
 </main>
 
 <?php
