@@ -63,11 +63,12 @@
 /* <style all> */
 
 /* section-one */
- 
+
 .section-one {
- background: url('http://t2med/wp-content/uploads/2021/01/bg-main.png') no-repeat;
- background-size: cover;
- height: auto;
+  background: url("http://t2med/wp-content/uploads/2021/01/bg-main.png")
+    no-repeat;
+  background-size: cover;
+  height: auto;
 
   .container {
     max-width: 1440px;
@@ -75,14 +76,288 @@
     margin: 0 auto;
   }
 }
+.timers {
+  padding-top: 45px;
+  padding-bottom: 25px;
+}
+.timers-block {
+  display: flex;
 
+  width: 430px;
+  height: auto;
+
+  background: rgba(0, 46, 98, 0.6);
+  border: 1px solid rgba(17, 67, 122, 0.53);
+  box-sizing: border-box;
+  backdrop-filter: blur(14px);
+}
+.timers-item {
+  padding: 13px 31px;
+
+  &__info {
+    position: relative;
+    text-align: center;
+
+    & h3 {
+      font-size: 40px;
+      color: #43b0ef;
+      margin-bottom: 15px;
+    }
+    & p {
+      font-size: 12px;
+      color: #fff;
+      text-transform: uppercase;
+    }
+
+    &::before {
+      position: absolute;
+      content: "";
+
+      top: 23px;
+      right: -30px;
+
+      width: 1px;
+      height: 30px;
+
+      background: rgba(255, 255, 255, 0.2);
+    }
+  }
+  &__info-last {
+    & h3 {
+      font-size: 40px;
+      color: #43b0ef;
+      margin-bottom: 15px;
+    }
+    & p {
+      font-size: 12px;
+      color: #fff;
+      text-transform: uppercase;
+    }
+  }
+}
+
+.main-info {
+  padding-bottom: 200px;
+
+  & h1 {
+    font-weight: 800;
+    font-size: 125px;
+    letter-spacing: 0.025em;
+    color: #eeeeee;
+    margin-bottom: 25px;
+
+    & span {
+      color: #43b0ef;
+    }
+  }
+
+  &__startup {
+    display: flex;
+    margin-bottom: 25px;
+  }
+  &__startup-days {
+    position: relative;
+    margin-right: 70px;
+
+    font-weight: 300;
+    font-size: 46px;
+    color: #fff;
+    text-transform: uppercase;
+    color: #43b0ef;
+
+    &::before {
+      content: "";
+      position: absolute;
+
+      top: 5px;
+      right: -35px;
+
+      width: 1px;
+      height: 40px;
+      background: rgba(255, 255, 255, 0.5);
+    }
+  }
+  &__startup-txt {
+    font-weight: 300;
+    font-size: 46px;
+    letter-spacing: 1px;
+    color: #fff;
+    text-transform: uppercase;
+  }
+
+  &__dates {
+    margin-bottom: 20px;
+  }
+  &__dates-one {
+    font-size: 28px;
+    line-height: 37px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 300;
+  }
+  &__dates-two {
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 300;
+  }
+}
+.button {
+  &__apply {
+    padding: 16px 55px 17px;
+    margin-right: 14px;
+
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 24px;
+    color: #fff;
+
+    border: 1px solid #ffffff;
+    background: none;
+    box-sizing: border-box;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  &__login {
+    padding: 16px 114px 17px;
+
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 24px;
+    color: #fff;
+
+    border: none;
+    background: linear-gradient(91.03deg, #29b1ff 1.07%, #00a3ff 100.12%);
+    box-sizing: border-box;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+}
 
 /* <section-one> */
 
+/* section-two */
 
+.section-two {
+  position: relative;
+  background: #f5f5f5;
+  overflow: hidden;
 
+  .container {
+    max-width: 1565px;
+    padding: 0 30px;
+    margin: 0 auto;
+    padding-top: 112px;
+    padding-bottom: 82px;
+  }
+  .left-background {
+    .left-top {
+      position: absolute;
 
+      max-width: 101px;
+      width: 100%;
+      height: auto;
 
+      top: 85px;
+      left: 0;
+    }
+    .left-bottom {
+      position: absolute;
+
+      max-width: 63px;
+      width: 100%;
+      height: auto;
+
+      bottom: 35px;
+      left: 0;
+    }
+  }
+  .right-background {
+    .right-center {
+      position: absolute;
+
+      max-width: 1095px;
+      width: 100%;
+      height: auto;
+
+      bottom: 35px;
+      right: -8%;
+    }
+  }
+}
+
+.medical-info {
+  padding: 0 0 0 0;
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  &__left-position {
+  }
+  &__right-position {
+  }
+
+  &__block {
+    padding-right: 87px;
+
+    & h2 {
+      font-weight: bold;
+      font-size: 52px;
+      line-height: 49px;
+      text-transform: uppercase;
+      color: #1f3c67;
+      margin-bottom: 22px;
+    }
+    & span {
+      display: block;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 15px;
+      color: #333333;
+      margin-bottom: 22px;
+    }
+    & p {
+      width: 87%;
+      font-size: 16px;
+      line-height: 24px;
+      color: #333;
+    }
+  }
+  .last {
+    &__block {
+      max-width: 615px;
+      width: 100%;
+      background: #fff;
+
+      padding: 10px 0px 10px 40px;
+      margin-top: -3px;
+
+      & h4 {
+        font-size: 18px;
+        line-height: 15px;
+        color: #4f4f4f;
+        margin-bottom: 5px;
+        & span {
+          font-weight: 700;
+          font-size: 18px;
+          line-height: 15px;
+          color: #43b0ef;
+        }
+      }
+      & p {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 15px;
+        color: #43b0ef;
+      }
+    }
+  }
+}
+
+/* <section-two> */
 
 /* section-three */
 
@@ -549,7 +824,6 @@
 
     background: #fff;
     transition: all 0.4s ease-in-out;
-    cursor: pointer;
 
     &:last-child {
       margin-right: 0px;
@@ -588,7 +862,6 @@
   &__left-position {
     position: relative;
     background: #fff;
-
   }
 
   &__right-position {
@@ -603,11 +876,10 @@
   }
 
   .contact-background {
-    
     .top-left {
-     position: absolute;
-     top: 0;
-     left: 0;
+      position: absolute;
+      top: 0;
+      left: 0;
     }
     .bottom-left {
       position: absolute;
@@ -626,7 +898,6 @@
 
   &__info {
     padding: 123px 202px 100px 230px;
-    
   }
   &__info-mail {
     position: relative;
@@ -641,15 +912,15 @@
     }
     &::before {
       position: absolute;
-      content: '';
-      
+      content: "";
+
       top: 7px;
       left: -40px;
-      
-      background: url('http://t2med/wp-content/uploads/2021/01/mail.png') no-repeat;
-       width: 20px;
-       height: 15px;
-     
+
+      background: url("http://t2med/wp-content/uploads/2021/01/mail.png")
+        no-repeat;
+      width: 20px;
+      height: 15px;
     }
   }
   &__info-text {
@@ -657,16 +928,16 @@
     margin-bottom: 24px;
     font-size: 18px;
     line-height: 24px;
-    color: #252B42;
+    color: #252b42;
 
     &::before {
       position: absolute;
-      content: '';
-      
+      content: "";
+
       top: 2px;
       left: -38px;
 
-      background: url('http://t2med/wp-content/uploads/2021/01/location.png');
+      background: url("http://t2med/wp-content/uploads/2021/01/location.png");
       width: 16px;
       height: 19px;
     }
@@ -684,12 +955,12 @@
 
     &::before {
       position: absolute;
-      content: '';
+      content: "";
 
       top: 6px;
       left: -39px;
 
-      background: url('http://t2med/wp-content/uploads/2021/01/facebook.png');
+      background: url("http://t2med/wp-content/uploads/2021/01/facebook.png");
       width: 18px;
       height: 17px;
     }

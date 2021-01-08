@@ -74,10 +74,10 @@
             <nav class="nav">
                <ul class="nav__item">
                   <li class="nav__link">
-                     <a href="#">Home</a>
+                     <a href="<?= get_home_url().'/index.php'?>">Home</a>
                   </li>
                   <li class="nav__link">
-                     <a href="#">Terms</a>
+                     <a href="<?= get_home_url().'/terms.php'?>">Terms</a>
                   </li>
                   <li class="nav__link">
                      <a href="#">Mentors</a>

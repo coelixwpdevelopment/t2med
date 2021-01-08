@@ -19,10 +19,94 @@ get_header();
 <main id="primary" class="site-main">
 
     <section class="section-one">
-		<div class="container">
-			
+        <div class="container">
+            <div class="timers">
+                <div class="timers-block">
+                    <div class="timers-item">
+                        <div class="timers-item__info">
+                            <h3>300</h3>
+                            <p>days</p>
+                        </div>
+                    </div>
+                    <div class="timers-item">
+                        <div class="timers-item__info">
+                            <h3>1</h3>
+                            <p>hous</p>
+                        </div>
+                    </div>
+                    <div class="timers-item">
+                        <div class="timers-item__info">
+                            <h3>12</h3>
+                            <p>minutes</p>
+                        </div>
+                    </div>
+                    <div class="timers-item">
+                        <div class="timers-item__info-last">
+                            <h3>24</h3>
+                            <p>seconds</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-info">
+                <h1>T<span>2</span>MED</h1>
+                <div class="main-info__startup">
+                    <p class="main-info__startup-days">3 day</p>
+                    <p class="main-info__startup-txt">startup</p>
+                </div>
+                <div class="main-info__dates">
+                    <p class="main-info__dates-one">24-26 march, 2021</p>
+                    <p class="main-info__dates-two">FACULTY OF MEDICINE, TECHNION</p>
+                </div>
+                <div class="button">
+                    <button class="button__apply">Apply for T2MED</button>
+                    <button class="button__login">Login</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-two">
+        <div class="left-background">
+            <div class="figure-background">
+                <img class="left-top" src="http://t2med/wp-content/uploads/2021/01/medic__top-left.png" alt="">
+            </div>
+            <div class="figure-background">
+                <img class="left-bottom" src="http://t2med/wp-content/uploads/2021/01/medic__bottom-left.png" alt="">
+            </div>
 		</div>
-	</section>	 
+		<div class="right-background">
+            <img class="right-center" src="http://t2med/wp-content/uploads/2021/01/medic__right.png" alt="">
+		</div>
+        <div class="container">
+            <div class="medical-info">
+                <div class="medical-info__left-position">
+                    <div class="medical-info__block">
+                        <h2>Medical Entrepreneurship Hackathon</h2>
+                        <span>For students of all degrees and all Technion faculties</span>
+                        <p>The T2MED conference will bring together students from the various faculties in order to find
+                            a technological and business solution to medical problems. The students will learn to build
+                            a business plan, work on an initial prototype, interview potential customers and users, and
+                            ultimately present their products to leading industry and health care providers in Israel.
+                            The students' work at the conference will be conducted in small, multidisciplinary groups;
+                            Each group will focus on a different medical problem that will be chosen by the group
+                            members and will receive personal mentoring from leading mentors in the field of medical
+                            entrepreneurship in Israel.
+                        </p>
+                    </div>
+                </div>
+                <div class="medical-info__right-position">
+					<div class="last">
+						<img src="http://t2med/wp-content/uploads/2021/01/medic-img.png" alt="">
+						<div class="last__block">
+							<h4>Last year winners: <span>ALARMI</span></h4>
+							<p>Hadas Braude‎‏ | sean Heilbronn-Doron | Noa Goldberg | Valentina d'Empaire  | Cameron Guernsey</p>
+						</div>
+					</div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <section class="section-three">
         <div class="container">
@@ -141,10 +225,12 @@ get_header();
                 <img class="top-left" src="http://t2med/wp-content/uploads/2021/01/figure-faq__top-left.png" alt="">
             </div>
             <div class="figure__background-faq">
-                <img class="bottom-left" src="http://t2med/wp-content/uploads/2021/01/figure-faq__bottom-left.png" alt="">
+                <img class="bottom-left" src="http://t2med/wp-content/uploads/2021/01/figure-faq__bottom-left.png"
+                    alt="">
             </div>
             <div class="figure__background-faq">
-                <img class="bottom-right" src="http://t2med/wp-content/uploads/2021/01/figure-faq__bottom-right.png" alt="">
+                <img class="bottom-right" src="http://t2med/wp-content/uploads/2021/01/figure-faq__bottom-right.png"
+                    alt="">
             </div>
         </div>
         <div class="container">
@@ -264,75 +350,72 @@ get_header();
                 </div>
             </div>
         </div>
-	</section>
-	
-	<section class="section-seven">
-		<div class="container">
-			<h2 class="title__sponsors">sponsors</h2>
-			<div class="sponsors-ticket">
-				<div class="sponsors-block">
-					<div class="sponsors-block__item">
-						<img src="http://t2med/wp-content/uploads/2021/01/1-1.png" alt="">	
-					</div>
-					<div class="sponsors-block__item">
-						<img src="http://t2med/wp-content/uploads/2021/01/2-1.png" alt="">	
-					</div>
-					<div class="sponsors-block__item">
-						<img src="http://t2med/wp-content/uploads/2021/01/3-1.png" alt="">	
-					</div>
-					<div class="sponsors-block__item">
-						<img src="http://t2med/wp-content/uploads/2021/01/4.png" alt="">	
-					</div>
-					<div class="sponsors-block__item">
-						<img src="http://t2med/wp-content/uploads/2021/01/5.png" alt="">	
-					</div>
-					<div class="sponsors-block__item">
-						<img src="http://t2med/wp-content/uploads/2021/01/6.png" alt="">	
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+    </section>
 
-	<section class="section-eight">
-		<div class="container">
-			<h2 class="title__contact">contact us</h2>
-			 <div class="contact-block">
-				 <div class="contact-block__left-position">
+    <section class="section-seven">
+        <div class="container">
+            <h2 class="title__sponsors">sponsors</h2>
+            <div class="sponsors-ticket">
+                <div class="sponsors-block">
+                    <div class="sponsors-block__item">
+                        <img src="http://t2med/wp-content/uploads/2021/01/1-1.png" alt="">
+                    </div>
+                    <div class="sponsors-block__item">
+                        <img src="http://t2med/wp-content/uploads/2021/01/2-1.png" alt="">
+                    </div>
+                    <div class="sponsors-block__item">
+                        <img src="http://t2med/wp-content/uploads/2021/01/3-1.png" alt="">
+                    </div>
+                    <div class="sponsors-block__item">
+                        <img src="http://t2med/wp-content/uploads/2021/01/4.png" alt="">
+                    </div>
+                    <div class="sponsors-block__item">
+                        <img src="http://t2med/wp-content/uploads/2021/01/5.png" alt="">
+                    </div>
+                    <div class="sponsors-block__item">
+                        <img src="http://t2med/wp-content/uploads/2021/01/6.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-eight">
+        <div class="container">
+            <h2 class="title__contact">contact us</h2>
+            <div class="contact-block">
+                <div class="contact-block__left-position">
                     <div class="contact-background">
-						<div class="top-left">
-							<img  src="http://t2med/wp-content/uploads/2021/01/figure-contact__top-left.png" alt="">
-						</div>
-						<div class="bottom-left">
-							<img src="http://t2med/wp-content/uploads/2021/01/figure-contact__bottom-left.png" alt="">
-						</div>
-					</div>
-					<div class="contact-block__info">
-						<ul class="contact-block__info-item">
-							<li class="contact-block__info-mail">
-                              <a href="mailto:team@t2med.co.il">team@t2med.co.il</a>
-							</li>
-							<li class="contact-block__info-text">
-								<p>Rappaport Faculty of Medicine of the Technion <br> 1 Efron St. Bat Galim, Haifa</p>
-							</li>
-							<li class="contact-block__info-facebook">
-								<a href="">our facebook</a>
-							</li>
-						</ul>
-					</div>
-				 </div>
-				 <div class="contact-block__right-position">
-					<iframe class="google-maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3352.4149401412983!2d34.98161051567436!3d32.834263580954755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151dbbd0803422e7%3A0x4bc667f2ea55e771!2sThe%20Ruth%20and%20Bruce%20Rappaport%20Faculty%20of%20Medicine!5e0!3m2!1sru!2sua!4v1610111361652!5m2!1sru!2sua" 
-						frameborder="0" 
-						style="border:0;" 
-						allowfullscreen="" 
-						aria-hidden="false" 
-						tabindex="0">
-					</iframe>
-				 </div>
-			 </div>
-		</div>
-	</section>
+                        <div class="top-left">
+                            <img src="http://t2med/wp-content/uploads/2021/01/figure-contact__top-left.png" alt="">
+                        </div>
+                        <div class="bottom-left">
+                            <img src="http://t2med/wp-content/uploads/2021/01/figure-contact__bottom-left.png" alt="">
+                        </div>
+                    </div>
+                    <div class="contact-block__info">
+                        <ul class="contact-block__info-item">
+                            <li class="contact-block__info-mail">
+                                <a href="mailto:team@t2med.co.il">team@t2med.co.il</a>
+                            </li>
+                            <li class="contact-block__info-text">
+                                <p>Rappaport Faculty of Medicine of the Technion <br> 1 Efron St. Bat Galim, Haifa</p>
+                            </li>
+                            <li class="contact-block__info-facebook">
+                                <a href="">our facebook</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="contact-block__right-position">
+                    <iframe class="google-maps"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3352.4149401412983!2d34.98161051567436!3d32.834263580954755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151dbbd0803422e7%3A0x4bc667f2ea55e771!2sThe%20Ruth%20and%20Bruce%20Rappaport%20Faculty%20of%20Medicine!5e0!3m2!1sru!2sua!4v1610111361652!5m2!1sru!2sua"
+                        frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
 </main>
 
 <?php
