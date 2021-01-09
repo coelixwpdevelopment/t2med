@@ -1,5 +1,13 @@
-async function hello ( name ) {
-  console.log(`Hello ${name}`);
-}
+$('.slick-vertical').slick({
+    vertical: true,
+    verticalSwiping: true,
 
-hello('Kitus');
+    slidesToShow: 1,
+
+    speed: 500,
+    // autoplay: true,
+    dots: true,
+
+    prevArrow: $('.btn-next'),
+    nextArrow: $('.btn-prev'),
+});

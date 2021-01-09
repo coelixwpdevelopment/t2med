@@ -1,303 +1,1073 @@
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-  display: block;
-}
-body {
-  line-height: 1;
-  font-family: "Assistant", sans-serif;
-}
-ol,
-ul {
-  list-style: none;
-}
-blockquote,
-q {
-  quotes: none;
-}
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-  content: "";
-  content: none;
-}
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-.svg-us {
-  width: 32px;
-  height: 32px;
-}
-.svg-isr {
-  width: 32px;
-  height: 32px;
-}
+@import 'styles.scss';
+@import 'header.scss';
+@import 'footer.scss';
+@import 'terms.scss';
+@import 'media.scss';
 
-/* header */
+/* style all */
+.title {
+  &__awards {
+    padding-top: 110px;
+    color: #fff;
+    margin-bottom: 170px;
+    font-size: 52px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  &__program {
+    padding-top: 100px;
+    color: #1f3c67;
+    margin-bottom: 63px;
+    font-size: 52px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  &__team {
+    padding-top: 110px;
+    color: #fff;
+    margin-bottom: 170px;
+    font-size: 52px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  &__faq {
+    padding-top: 110px;
+    color: #1f3c67;
+    margin-bottom: 65px;
+    font-size: 52px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  &__sponsors {
+    padding-top: 155px;
+    color: #fff;
+    margin-bottom: 65px;
+    font-size: 52px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  &__contact {
+    padding-top: 110px;
+    color: #1f3c67;
+    margin-bottom: 53px;
+    font-size: 52px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+  }
+}
+/* <style all> */
 
-.site-header {
-  position: relative;
-  background: #f5f5f5;
-  width: 100%;
-  z-index: 100;
-  padding: 15px 0;
+/* section-one */
+
+.section-one {
+  background: url('http://t2med/wp-content/uploads/2021/01/bg-main.png')
+    no-repeat;
+  background-size: cover;
+  height: auto;
+
   .container {
     max-width: 1440px;
     padding: 0 30px;
     margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
   }
 }
-.nav {
-  align-self: center;
-  margin-left: 105px;
-  &__item {
-    display: flex;
-  }
-  &__link {
-    margin: 0 15px;
+.timers {
+  padding-top: 45px;
+  padding-bottom: 25px;
+}
+.timers-block {
+  display: flex;
 
-    & a {
-      text-decoration: none;
-      color: rgba(79, 79, 79, 1);
-      font-size: 16px;
-      line-height: 24px;
-    }
-  }
-}
-.languages {
-  position: absolute;
-  width: 92px;
+  width: 430px;
   height: auto;
-  background: #ffffff;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 4px;
-  margin: 4px 0;
-  z-index: 101;
-}
-.lang-option {
-  display: flex;
-  width: 82%;
-  padding: 10px 0;
-  margin: 0 auto;
-}
-.lang-items {
-  cursor: pointer;
-  .he {
-    color: rgba(0, 46, 98, 1);
-    display: flex;
-    padding-top: 9px;
-    padding-left: 6px;
-    font-weight: 700;
-  }
-}
-.lang-he {
-  display: flex;
-}
-.arrow-down {
-  margin-top: 0.8em;
-  width: 0;
-  height: 0;
-  border-left: 5px solid transparent;
-  border-right: 5px solid transparent;
-  border-top: 5px solid #032954;
-  transition: 500ms;
-  margin-left: 9px;
-  cursor: pointer;
-}
-.logo {
-  display: flex;
 
-  &__item-1 {
+  background: rgba(0, 46, 98, 0.6);
+  border: 1px solid rgba(17, 67, 122, 0.53);
+  box-sizing: border-box;
+  backdrop-filter: blur(14px);
+}
+.timers-item {
+  padding: 13px 31px;
+
+  &__info {
     position: relative;
-    margin-right: 30px;
-    display: flex;
-    align-self: center;
+    text-align: center;
+
+    & h3 {
+      font-size: 40px;
+      color: #43b0ef;
+      margin-bottom: 15px;
+    }
+    & p {
+      font-size: 12px;
+      color: #fff;
+      text-transform: uppercase;
+    }
 
     &::before {
       position: absolute;
-      content: "";
-      top: 4px;
-      right: -14px;
-      width: 2px;
-      height: 40px;
-      background: rgba(100, 177, 221, 1);
-    }
+      content: '';
 
-    & img {
-      display: block;
-      width: 87px;
-      height: 19px;
-      padding-top: 15px;
-    }
+      top: 23px;
+      right: -30px;
 
-    svg {
-      margin-right: 15px;
-      display: block;
+      width: 1px;
+      height: 30px;
+
+      background: rgba(255, 255, 255, 0.2);
+    }
+  }
+  &__info-last {
+    & h3 {
+      font-size: 40px;
+      color: #43b0ef;
+      margin-bottom: 15px;
+    }
+    & p {
+      font-size: 12px;
+      color: #fff;
+      text-transform: uppercase;
     }
   }
 }
 
-/* footer */
+.main-info {
+  padding-bottom: 200px;
 
-.site-footer {
-  width: 100%;
-  background: rgba(8, 7, 37, 1);
-  backdrop-filter: blur(16px);
-  .container {
-    max-width: 1920px;
-    padding: 25px 45px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
+  & h1 {
+    font-weight: 800;
+    font-size: 125px;
+    letter-spacing: 0.025em;
+    color: #eeeeee;
+    margin-bottom: 25px;
+
+    & span {
+      color: #43b0ef;
+    }
   }
-  .nav {
-    margin-left: 0;
-    &__link {
-      & a {
-        color: #fff;
+
+  &__startup {
+    display: flex;
+    margin-bottom: 25px;
+  }
+  &__startup-days {
+    position: relative;
+    margin-right: 70px;
+
+    font-weight: 300;
+    font-size: 46px;
+    color: #fff;
+    text-transform: uppercase;
+    color: #43b0ef;
+
+    &::before {
+      content: '';
+      position: absolute;
+
+      top: 5px;
+      right: -35px;
+
+      width: 1px;
+      height: 40px;
+      background: rgba(255, 255, 255, 0.5);
+    }
+  }
+  &__startup-txt {
+    font-weight: 300;
+    font-size: 46px;
+    letter-spacing: 1px;
+    color: #fff;
+    text-transform: uppercase;
+  }
+
+  &__dates {
+    margin-bottom: 20px;
+  }
+  &__dates-one {
+    font-size: 28px;
+    line-height: 37px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 300;
+  }
+  &__dates-two {
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 300;
+  }
+}
+.button {
+  &__apply {
+    padding: 16px 55px 17px;
+    margin-right: 14px;
+
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 24px;
+    color: #fff;
+
+    border: 1px solid #ffffff;
+    background: none;
+    box-sizing: border-box;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  &__login {
+    padding: 16px 114px 17px;
+
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 24px;
+    color: #fff;
+
+    border: none;
+    background: linear-gradient(91.03deg, #29b1ff 1.07%, #00a3ff 100.12%);
+    box-sizing: border-box;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+}
+
+/* <section-one> */
+
+/* section-two */
+
+.section-two {
+  position: relative;
+  background: #f5f5f5;
+  overflow: hidden;
+
+  .container {
+    max-width: 1565px;
+    padding: 0 30px;
+    margin: 0 auto;
+    padding-top: 112px;
+    padding-bottom: 82px;
+  }
+  .left-background {
+    .left-top {
+      position: absolute;
+
+      max-width: 101px;
+      width: 100%;
+      height: auto;
+
+      top: 85px;
+      left: 0;
+    }
+    .left-bottom {
+      position: absolute;
+
+      max-width: 63px;
+      width: 100%;
+      height: auto;
+
+      bottom: 35px;
+      left: 0;
+    }
+  }
+  .right-background {
+    .right-center {
+      position: absolute;
+
+      max-width: 1095px;
+      width: 100%;
+      height: auto;
+
+      bottom: 35px;
+      right: -8%;
+    }
+  }
+}
+
+.medical-info {
+  padding: 0 0 0 0;
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  &__left-position {
+  }
+  &__right-position {
+  }
+
+  &__block {
+    padding-right: 87px;
+
+    & h2 {
+      font-weight: bold;
+      font-size: 52px;
+      line-height: 49px;
+      text-transform: uppercase;
+      color: #1f3c67;
+      margin-bottom: 22px;
+    }
+    & span {
+      display: block;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 15px;
+      color: #333333;
+      margin-bottom: 22px;
+    }
+    & p {
+      width: 87%;
+      font-size: 16px;
+      line-height: 24px;
+      color: #333;
+    }
+  }
+  .last {
+    &__block {
+      max-width: 615px;
+      width: 100%;
+      background: #fff;
+
+      padding: 10px 0px 10px 40px;
+      margin-top: -3px;
+
+      & h4 {
+        font-size: 18px;
+        line-height: 15px;
+        color: #4f4f4f;
+        margin-bottom: 5px;
+        & span {
+          font-weight: 700;
+          font-size: 18px;
+          line-height: 15px;
+          color: #43b0ef;
+        }
+      }
+      & p {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 15px;
+        color: #43b0ef;
       }
     }
   }
 }
 
-.social-media {
-  align-self: center;
+/* <section-two> */
+
+/* section-three */
+
+.section-three {
+  background: url('http://t2med/wp-content/uploads/2021/01/bg-images-3-1.png')
+    no-repeat;
+  background-size: cover;
+  height: auto;
+
+  .container {
+    max-width: 1565px;
+    padding: 0 30px;
+    margin: 0 auto;
+  }
+}
+.section-content {
+  padding-bottom: 165px;
   display: flex;
-  
+  justify-content: center;
 
-  &__facebook {
+  &__item-1 {
+    max-width: 454px;
+    width: 100%;
+    text-align: center;
+    z-index: 1;
+    margin-top: 70px;
+  }
+  &__item-2 {
+    max-width: 622px;
+    width: 100%;
+    text-align: center;
+    z-index: 3;
+  }
+  &__item-3 {
+    max-width: 490px;
+    width: 100%;
+    text-align: center;
+    z-index: 2;
+    margin-left: -37px;
+    margin-top: 41px;
+  }
+}
+
+.item {
+  text-align: center;
+  &__info {
     position: relative;
-    display: flex;
-    align-self: center;
+    background: #ffffff;
+    box-shadow: 0px 40px 74px rgba(0, 0, 0, 0.22);
 
-    & h4 {
-      font-size: 21px;
-      color: rgba(236, 236, 236, 1);
-      margin-right: 15px;
+    & img {
+      margin-top: -197px;
+
+      max-width: 390px;
+      width: 100%;
+      height: auto;
     }
-    &::before {
-      position: absolute;
-      content: "";
-      top: 3px;
-      right: -35px;
-      width: 1px;
-      height: 17px;
-      background:rgba(255, 255, 255, 0.5);
+
+    & h3 {
+      font-weight: bold;
+      font-size: 24px;
+      color: #1f3c67;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+
+    & p {
+      font-size: 16px;
+      color: #828282;
+      line-height: 24px;
+      padding-bottom: 9px;
+    }
+  }
+  &__info-2 {
+    position: relative;
+    background: #ffffff;
+    box-shadow: 0px 40px 74px rgba(0, 0, 0, 0.22);
+
+    & img {
+      margin-top: -139px;
+      margin-right: 35px;
+
+      width: 100%;
+      max-width: 373px;
+      height: auto;
+    }
+
+    & h3 {
+      font-weight: bold;
+      font-size: 36px;
+      color: #1f3c67;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+
+    & p {
+      font-size: 16px;
+      color: #828282;
+      line-height: 24px;
+      padding-bottom: 28px;
+    }
+  }
+  &__info-3 {
+    position: relative;
+    background: #ffffff;
+    box-shadow: 0px 40px 74px rgba(0, 0, 0, 0.22);
+
+    & img {
+      margin-top: -220px;
+
+      max-width: 400px;
+      width: 100%;
+      height: auto;
+    }
+
+    & h3 {
+      font-weight: bold;
+      font-size: 24px;
+      color: #1f3c67;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+
+    & p {
+      font-size: 16px;
+      color: #828282;
+      line-height: 24px;
+      padding-bottom: 9px;
     }
   }
 
-  &__title {
-    font-family: 'Arimo';
-    color: #fff;
-    text-align: center;
-    max-width: 230px;
-    margin-left: 58px;
-    & span{
+  &__price {
+    background: #b9694f;
+    box-shadow: 0px 40px 74px rgba(0, 0, 0, 0.22);
+
+    & p {
+      padding: 25px 138px 25px 153px;
+      font-size: 28px;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: #fff;
+      letter-spacing: 0.285em;
+    }
+  }
+  &__price-2 {
+    background: #c4955e;
+    box-shadow: 0px 40px 74px rgba(0, 0, 0, 0.22);
+    & p {
+      padding: 25px 0;
+      font-size: 28px;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: #fff;
+      letter-spacing: 0.285em;
+    }
+  }
+  &__price-3 {
+    background: #b9bdcc;
+    box-shadow: 0px 40px 74px rgba(0, 0, 0, 0.22);
+    & p {
+      padding: 25px 160px 25px 167px;
+      font-size: 28px;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: #fff;
+      letter-spacing: 0.285em;
+    }
+  }
+}
+
+/* <section-three> */
+
+/* section-four */
+
+.section-four {
+  background: #f5f5f5;
+
+  .container {
+    position: relative;
+    max-width: 1440px;
+    padding: 0 30px;
+    margin: 0 auto;
+    padding-bottom: 90px;
+  }
+}
+.ticket-block {
+  position: relative;
+  max-width: 1270px;
+  margin: 0 auto;
+  background: #ffffff;
+  box-shadow: 0px 58px 113px rgba(0, 0, 0, 0.03);
+
+  &__figure-background {
+    .top-left {
+      position: absolute;
+      top: 0;
+
+      max-width: 117px;
+      width: 100%;
+      height: auto;
+    }
+    .bottom-left {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+
+      max-width: 117px;
+      width: 100%;
+      height: auto;
+    }
+    .bottom-right {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+
+      max-width: 404px;
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+/* slider */
+.content {
+  position: relative;
+  padding-top: 156px;
+  padding-left: 172px;
+  padding-right: 260px;
+  padding-bottom: 214px;
+}
+
+.btns-container {
+  width: 47px;
+  position: absolute;
+  bottom: 80px;
+}
+
+.slick-dots {
+  display: flex;
+  flex-direction: column;
+  bottom: 20px;
+  left: -60px;
+}
+.slick-dots li button:before {
+  font-size: 10px;
+  color: #b6b8c7;
+}
+.slick-dots li.slick-active button:before {
+  font-size: 18px;
+  color: #032954;
+}
+
+.btn-next {
+  margin-bottom: 27px;
+  width: 47px;
+  height: 26px;
+  transform: rotate(180deg);
+  background: url('http://t2med/wp-content/uploads/2021/01/arrow-active.png');
+  cursor: pointer;
+}
+.btn-prev {
+  width: 47px;
+  height: 26px;
+  background: url('http://t2med/wp-content/uploads/2021/01/arrow-active.png');
+  cursor: pointer;
+}
+
+.slick-container {
+  position: relative;
+  height: 176px;
+}
+
+.slick-wrapper {
+}
+
+.slider-item {
+  position: relative;
+  display: flex !important;
+  z-index: 4;
+  height: 220px;
+}
+.slider-title {
+  padding-right: 60px;
+
+  & h3 {
+    font-size: 36px;
+    line-height: 28px;
+    color: #032954;
+    margin-bottom: 50px;
+  }
+
+  & p {
+    font-size: 14px;
+    line-height: 24px;
+    color: #828282;
+
+    & span {
       font-weight: 700;
     }
   }
 }
-.svg-facewhite {
-  margin-top: -2px;
+
+.slider-date {
+  transform: translate(-11px, -25px);
+  .d {
+    font-size: 144px;
+    font-weight: 700;
+    text-align: right;
+    color: #1f3c67;
+    // margin-right: -70px;
+
+    & span {
+      font-weight: bold;
+      font-size: 52px;
+      line-height: 20px;
+      text-transform: uppercase;
+      color: #1f3c67;
+    }
+  }
+
+  .m {
+    font-weight: 700;
+    font-size: 52px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #1f3c67;
+  }
 }
+
+/* <section-four */
+
+/* section-five */
+.section-five {
+  background: url('http://t2med/wp-content/uploads/2021/01/bg-images-4.png')
+    no-repeat;
+  background-size: cover;
+  height: auto;
+  .container {
+    max-width: 1440px;
+    padding: 0 30px;
+    margin: 0 auto;
+  }
+}
+
+.team {
+  max-width: 1140px;
+  margin: 0 auto;
+  display: flex;
+  padding-bottom: 120px;
+
+  &__item {
+    max-width: 360px;
+    width: 100%;
+
+    background: #ffffff;
+    box-shadow: 0px 40px 74px rgba(0, 0, 0, 0.22);
+
+    text-align: center;
+    margin-right: 30px;
+
+    &:last-child {
+      margin-right: 0px;
+    }
+  }
+
+  &__item-img {
+    margin-bottom: 25px;
+
+    & img {
+      border-radius: 50%;
+      border: 5px solid #43b0ef;
+      margin-top: -90px;
+    }
+  }
+
+  &__item-name {
+    font-size: 24px;
+    line-height: 31px;
+    color: #1f3c67;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+  }
+
+  &__item-position {
+    font-size: 14px;
+    line-height: 24px;
+    color: #bdbdbd;
+    padding-bottom: 40px;
+  }
+}
+
+/* <section-five> */
+
+/* section-six */
+
+.section-six {
+  position: relative;
+  background: #f5f5f5;
+  overflow: hidden;
+
+  .container {
+    max-width: 1565px;
+    padding: 0 30px;
+    margin: 0 auto;
+  }
+  .background-figure {
+    .top-left {
+      position: absolute;
+      z-index: 1;
+
+      top: 0;
+      left: -95px;
+
+      &img {
+        max-width: 206px;
+        width: 100%;
+        height: auto;
+      }
+    }
+    .bottom-left {
+      position: absolute;
+      z-index: 1;
+
+      bottom: 0;
+      left: -120px;
+
+      & img {
+        max-width: 271px;
+        width: 100%;
+        height: auto;
+      }
+    }
+    .bottom-right {
+      position: absolute;
+      z-index: 1;
+
+      bottom: 98px;
+      right: -170px;
+
+      & img {
+        max-width: 285px;
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+}
+.faq-block {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-bottom: 125px;
+
+  &__item {
+    max-width: 390px;
+    width: 100%;
+    padding: 35px 50px 35px 50px;
+    margin-right: 30px;
+    margin-bottom: 50px;
+
+    background: #fff;
+    box-shadow: 0px 40px 74px rgba(0, 0, 0, 0.22);
+    z-index: 2;
+    transition: all 0.4s ease-in-out;
+
+    &:nth-child(3) {
+      margin-right: 0px;
+    }
+    &:last-child {
+      margin-right: 0px;
+    }
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  &__svg {
+    margin-bottom: 25px;
+
+    & svg {
+      width: 40px;
+      height: 40px;
+    }
+  }
+  &__title-first {
+    position: relative;
+    font-size: 21px;
+    line-height: 27px;
+    text-transform: uppercase;
+    color: #1f3c67;
+    margin-bottom: 42px;
+
+    &:before {
+      position: absolute;
+      content: '';
+      top: 47px;
+      left: 0;
+      max-width: 113px;
+      width: 100%;
+      height: 1px;
+      background: #d0d1d2;
+    }
+  }
+  &__title {
+    position: relative;
+    font-size: 21px;
+    line-height: 27px;
+    text-transform: uppercase;
+    color: #1f3c67;
+    margin-bottom: 42px;
+
+    &:before {
+      position: absolute;
+      content: '';
+      top: 75px;
+      left: 0;
+      max-width: 113px;
+      width: 100%;
+      height: 1px;
+      background: #d0d1d2;
+    }
+  }
+
+  &__text {
+    font-size: 14px;
+    line-height: 24px;
+    color: #333333;
+
+    & span {
+      font-weight: 700;
+    }
+  }
+}
+
+/* <section-six> */
+
+/* section-seven */
+
+.section-seven {
+  background: url('http://t2med/wp-content/uploads/2021/01/bg-images-3-1.png')
+    no-repeat;
+  background-size: cover;
+  height: auto;
+
+  .container {
+    padding-bottom: 235px;
+  }
+}
+.sponsors-ticket {
+  background: rgba(67, 176, 239, 0.8);
+  height: auto;
+}
+
+.sponsors-block {
+  max-width: 1560px;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 30px 35px;
+
+  &__item {
+    max-width: 230px;
+    width: 100%;
+    height: auto;
+    margin-right: 30px;
+
+    background: #fff;
+    transition: all 0.4s ease-in-out;
+
+    &:last-child {
+      margin-right: 0px;
+    }
+
+    & img {
+      max-width: 231px;
+      width: 100%;
+      height: auto;
+    }
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}
+
+/* <section-seven> */
+
+/* section-eight */
+
+.section-eight {
+  background: #f5f5f5;
+  padding-bottom: 120px;
+
+  .container {
+    max-width: 1530px;
+    padding: 0 30px;
+    margin: 0 auto;
+  }
+}
+
+.contact-block {
+  display: flex;
+
+  &__left-position {
+    position: relative;
+    background: #fff;
+  }
+
+  &__right-position {
+    max-width: 746px;
+    width: 100%;
+
+    .google-maps {
+      max-width: 746px;
+      width: 100%;
+      height: 373px;
+    }
+  }
+
+  .contact-background {
+    .top-left {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    .bottom-left {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+
+    & img {
+      max-width: 109px;
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  /* info */
+
+  &__info {
+    padding: 123px 202px 100px 230px;
+  }
+  &__info-mail {
+    position: relative;
+    margin-bottom: 24px;
+
+    & a {
+      font-size: 18px;
+      letter-spacing: 0.2px;
+      color: #252b42;
+      line-height: 28px;
+      text-decoration: none;
+    }
+    &::before {
+      position: absolute;
+      content: '';
+
+      top: 7px;
+      left: -40px;
+
+      background: url('http://t2med/wp-content/uploads/2021/01/mail.png')
+        no-repeat;
+      width: 20px;
+      height: 15px;
+    }
+  }
+  &__info-text {
+    position: relative;
+    margin-bottom: 24px;
+    font-size: 18px;
+    line-height: 24px;
+    color: #252b42;
+
+    &::before {
+      position: absolute;
+      content: '';
+
+      top: 2px;
+      left: -38px;
+
+      background: url('http://t2med/wp-content/uploads/2021/01/location.png');
+      width: 16px;
+      height: 19px;
+    }
+  }
+  &__info-facebook {
+    position: relative;
+
+    & a {
+      font-size: 18px;
+      color: #43b0ef;
+      line-height: 28px;
+      text-decoration: none;
+      text-transform: capitalize;
+    }
+
+    &::before {
+      position: absolute;
+      content: '';
+
+      top: 6px;
+      left: -39px;
+
+      background: url('http://t2med/wp-content/uploads/2021/01/facebook.png');
+      width: 18px;
+      height: 17px;
+    }
+  }
+}
+
+/* <section-eight> */
