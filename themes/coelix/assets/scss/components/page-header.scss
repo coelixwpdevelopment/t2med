@@ -10,4 +10,11 @@
     font-weight: 800;
     color: #fff;
   }
+  @media (max-width: 1092px){
+    background: url('/wp-content/themes/coelix/assets/images/pages/app-form/page-header-mobile.png') no-repeat center;
+    height: 360px;
+    &__title{
+      font-size: 36px;
+    }
+  }
 }

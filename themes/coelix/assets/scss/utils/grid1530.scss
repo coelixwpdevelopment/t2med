@@ -4,21 +4,23 @@ $cols-count: 12;
 $col-width: 100px;
 
 .container-1530{
+  width: 100%;
   max-width: $container-width;
-  display: flex;
-  flex-grow: 1;
+  padding-right: ($gutter / 2);
+  padding-left: ($gutter / 2);
 
   .row{
     display: flex;
-    flex-grow: 1;
     flex-wrap: wrap;
+    flex: 1 1 auto;
     margin-right: -($gutter / 2);
     margin-left: -($gutter / 2);
   }
 
   @for $i from 1 through $cols-count {
     .col-#{$i} {
-      width: calc((100px + #{$gutter}) * #{$i});
+      flex: 0 0 (100%*$cols-count/12);
+      max-width: 100%*$cols-count/12;
       padding-left: ($gutter / 2);
       padding-right: ($gutter / 2);
     }

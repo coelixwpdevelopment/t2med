@@ -30,4 +30,38 @@ $(document).ready(function() {
       });
     });
   }
+
+
+  //application form logic
+  if($('.p-app-form__application-form').length){
+
+    $('.p-app-form__application-form').on('submit', function(e){
+      e.preventDefault();
+      const data = new FormData(this);
+
+      $.ajax({
+        type: "POST",
+        url: ajaxUrl,
+        processData: false,
+        contentType: false,
+        data: data,
+        success: function(response) {
+          if(response === 1) {
+            $('.app-form-success').addClass('app-form-success__open');
+            $("body").css("overflow", "hidden");
+          } else {
+            alert('Something went wrong');
+          }
+        }
+      });
+    });
+
+    function closeAppFormPopup(){
+      $('.app-form-success').removeClass('app-form-success__open');
+      $("body").css("overflow", '');
+      location.reload();
+    }
+
+    $('.app-form-success__close, .app-form-success__overlay').on('click', closeAppFormPopup);
+  }
 });

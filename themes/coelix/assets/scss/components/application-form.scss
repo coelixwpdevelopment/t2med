@@ -11,7 +11,11 @@
   }
 
   &__container{
+    width: 100%;
     max-width: 1040px;
+    min-width: 330px;
+    padding-right: ($gutter / 2);
+    padding-left: ($gutter / 2);
     .row{
       margin-right: -15px;
       margin-left: -15px;
@@ -23,6 +27,11 @@
       padding-right: 15px;
       padding-left: 15px;
     }
+    @media (max-width: 1092px){
+      .col{
+        flex-basis: calc(100%);
+      }
+    }
   }
 
   &-text{
@@ -32,6 +41,23 @@
   &__yes-no-container{
     margin-bottom: 16px;
   }
+  &__terms-link{
+    color: #64B1DD;
+    text-decoration: none;
+  }
+
+  &__submit{
+    @media (min-width: 1093px) {
+      &_mobile{
+        display: none !important;
+      }
+    }
+    @media (max-width: 1092px) {
+      &_desktop{
+        display: none !important;
+      }
+    }
+  }
 }
 
 .application-form-field{
@@ -39,8 +65,11 @@
   &__label{
     font-weight: bold;
     font-size: 24px;
-    line-height: 48px;
+    line-height: 34px;
     color: $dark-blue;
+    @media (max-width: 1092px){
+      font-size: 20px;
+    }
   }
 }
 
@@ -132,7 +161,9 @@
 .application-form-checkbox{
   display: inline-flex;
   &__input{
-    display: none;
+    opacity: 0;
+    width: 1px;
+    margin: 0;
     &:checked{
       & + .application-form-checkbox__label:before{
         content: '✓';
