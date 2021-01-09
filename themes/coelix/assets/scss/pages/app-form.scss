@@ -1,0 +1,13 @@
+.p-app-form{
+  box-sizing: border-box;
+  &__content{
+    padding: 50px;
+  }
+
+  &__application-form{
+    direction: rtl;
+    background-color: #FAFAFA;
+    padding-top: 123px;
+    padding-bottom: 176px;
+  }
+}

@@ -1,9 +1,20 @@
+@import "../../node_modules/jquery-nice-select/scss/nice-select.scss";
+
+@import "vars.scss";
 @import "styles.scss";
 @import "header.scss";
 @import "footer.scss";
 @import "media.scss";
 
+@import "utils/index.scss";
+@import "components/index.scss";
+@import "pages/index.scss";
+
+
 /* style all */
+*, :after, :before{
+  box-sizing: inherit;
+}
 .title {
   &__awards {
     padding-top: 110px;

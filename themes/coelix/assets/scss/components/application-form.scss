@@ -1,0 +1,156 @@
+.application-form{
+  &__application-form-field{
+    margin-bottom: 18px;
+  }
+
+  &__input-prepended-text{
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 13px;
+    margin-left: 8px;
+  }
+
+  &__container{
+    max-width: 1040px;
+    .row{
+      margin-right: -15px;
+      margin-left: -15px;
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .col{
+      flex-basis: calc(50%);
+      padding-right: 15px;
+      padding-left: 15px;
+    }
+  }
+
+  &-text{
+    margin-bottom: 16px;
+  }
+
+  &__yes-no-container{
+    margin-bottom: 16px;
+  }
+}
+
+.application-form-field{
+  width: 100%;
+  &__label{
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 48px;
+    color: $dark-blue;
+  }
+}
+
+.application-form-text-field,
+.application-form-textarea{
+  max-width: 100%;
+  min-width: 0;
+  width: 100%;
+  border: 2px solid #E8E8E8;
+  font-size: 15px;
+  padding-right: 18px;
+  padding-left: 18px;
+  font-weight: 400;
+  color: #B0B0B0;
+  &::placeholder{
+    color: #B0B0B0;
+  }
+}
+
+.application-form-text-field{
+  height: 54px;
+}
+
+.application-form-textarea{
+  padding-top: 10px;
+  height: 134px;
+  resize: none;
+}
+
+.application-form-select{
+  width: 100%;
+  height: 54px;
+  padding-right: 18px;
+  line-height: 54px;
+  border: 2px solid #E8E8E8;
+  border-radius: 0;
+  float: none;
+  text-align: right!important;
+  &:after{
+    right: auto;
+    left: 12px;
+  }
+  .current{
+    font-size: 15px;
+    font-weight: normal;
+    color: #B0B0B0;
+  }
+  .option{
+    padding-left: 30px;
+    padding-right: 30px;
+    min-height: 25px;
+    line-height: 25px;
+    &.disabled{
+      display: none;
+    }
+  }
+}
+
+.application-form-file-input{
+
+  &__input{
+    display: none;
+  }
+  &__label{
+    position: relative;
+    height: 54px;
+    display: flex;
+    align-items: center;
+    max-width: 100%;
+    min-width: 0;
+    width: 100%;
+    border: 2px solid #E8E8E8;
+    font-size: 15px;
+    padding-right: 18px;
+    padding-left: 45px;
+    font-weight: 400;
+    color: #B0B0B0;
+    &:after{
+      content: '';
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background-image: url('/wp-content/themes/coelix/assets/images/attachment.png');
+      left: 18px;
+    }
+  }
+}
+
+.application-form-checkbox{
+  display: inline-flex;
+  &__input{
+    display: none;
+    &:checked{
+      & + .application-form-checkbox__label:before{
+        content: '✓';
+      }
+    }
+  }
+  &__label{
+    &:before{
+      content: '';
+      display: inline-flex;
+      width: 15px;
+      height: 15px;
+      border: 1px solid #B0B0B0;
+      margin-left: 5px;
+    }
+  }
+
+  &__margin{
+    margin-left: 40px;
+  }
+}
