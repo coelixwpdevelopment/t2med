@@ -66,7 +66,7 @@
 /* section-one */
 
 .section-one {
-  background: url('http://t2med/wp-content/uploads/2021/01/bg-main.png')
+  background: url("http://t2med/wp-content/uploads/2021/01/bg-main.png")
     no-repeat;
   background-size: cover;
   height: auto;
@@ -112,7 +112,7 @@
 
     &::before {
       position: absolute;
-      content: '';
+      content: "";
 
       top: 23px;
       right: -30px;
@@ -167,7 +167,7 @@
     color: #43b0ef;
 
     &::before {
-      content: '';
+      content: "";
       position: absolute;
 
       top: 5px;
@@ -363,7 +363,7 @@
 /* section-three */
 
 .section-three {
-  background: url('http://t2med/wp-content/uploads/2021/01/bg-images-3-1.png')
+  background: url("http://t2med/wp-content/uploads/2021/01/bg-images-3-1.png")
     no-repeat;
   background-size: cover;
   height: auto;
@@ -691,7 +691,7 @@
 
 /* section-five */
 .section-five {
-  background: url('http://t2med/wp-content/uploads/2021/01/bg-images-4.png')
+  background: url("http://t2med/wp-content/uploads/2021/01/bg-images-4.png")
     no-repeat;
   background-size: cover;
   height: auto;
@@ -853,8 +853,27 @@
 
     &:before {
       position: absolute;
-      content: '';
+      content: "";
       top: 47px;
+      left: 0;
+      max-width: 113px;
+      width: 100%;
+      height: 1px;
+      background: #d0d1d2;
+    }
+  }
+  &__title {
+    position: relative;
+    font-size: 21px;
+    line-height: 27px;
+    text-transform: uppercase;
+    color: #1f3c67;
+    margin-bottom: 42px;
+
+    &:before {
+      position: absolute;
+      content: "";
+      top: 75px;
       left: 0;
       max-width: 113px;
       width: 100%;
@@ -898,7 +917,7 @@
 /* section-seven */
 
 .section-seven {
-  background: url('http://t2med/wp-content/uploads/2021/01/bg-images-3-1.png')
+  background: url("http://t2med/wp-content/uploads/2021/01/bg-images-3-1.png")
     no-repeat;
   background-size: cover;
   height: auto;
@@ -941,6 +960,31 @@
     &:hover {
       transform: scale(1.1);
     }
+
+    & img {
+      max-width: 231px;
+      width: 100%;
+      height: auto;
+    }
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}
+
+/* <section-seven> */
+
+/* section-eight */
+
+.section-eight {
+  background: #f5f5f5;
+  padding-bottom: 120px;
+
+  .container {
+    max-width: 1530px;
+    padding: 0 30px;
+    margin: 0 auto;
   }
 }
 
@@ -1015,12 +1059,12 @@
     }
     &::before {
       position: absolute;
-      content: '';
+      content: "";
 
       top: 7px;
       left: -40px;
 
-      background: url('http://t2med/wp-content/uploads/2021/01/mail.png')
+      background: url("http://t2med/wp-content/uploads/2021/01/mail.png")
         no-repeat;
       width: 20px;
       height: 15px;
@@ -1035,12 +1079,12 @@
 
     &::before {
       position: absolute;
-      content: '';
+      content: "";
 
       top: 2px;
       left: -38px;
 
-      background: url('http://t2med/wp-content/uploads/2021/01/location.png');
+      background: url("http://t2med/wp-content/uploads/2021/01/location.png");
       width: 16px;
       height: 19px;
     }
@@ -1058,12 +1102,12 @@
 
     &::before {
       position: absolute;
-      content: '';
+      content: "";
 
       top: 6px;
       left: -39px;
 
-      background: url('http://t2med/wp-content/uploads/2021/01/facebook.png');
+      background: url("http://t2med/wp-content/uploads/2021/01/facebook.png");
       width: 18px;
       height: 17px;
     }
