@@ -1,5 +1,234 @@
-@media (max-width: 1589px){
-    .faq-block__item:nth-child(3) {
-        margin-right: 30px!important;
+@media (max-width: 1589px) {
+  .faq-block__item:nth-child(3) {
+    margin-right: 30px !important;
+  }
+}
+@media (max-width: 998px) {
+  /* header */
+  .site-header {
+    padding: 10px 0;
+    .container {
+      padding: 0px 20px;
+      align-items: center;
     }
+    .nav {
+      align-self: center;
+      display: none;
+    }
+  }
+  .logo {
+    &__item-1 {
+      &::before {
+        display: none;
+      }
+    }
+
+    &__item-2 {
+      display: none;
+    }
+  }
+  .languages {
+    display: none;
+  }
+  /* burger */
+
+  .menu-button {
+    display: block;
+    width: 26px;
+    height: 25px;
+    right: 10px;
+    z-index: 997;
+    padding: 0;
+
+    .burger {
+      position: relative;
+      content: '';
+      width: 25px;
+      height: 2px;
+      left: 0px;
+      top: 0;
+      background: #43b0ef;
+      border-radius: 5px;
+
+      &::before {
+        position: absolute;
+        content: '';
+        width: 25px;
+        height: 2px;
+        top: -6px;
+        left: 0;
+        background: #43b0ef;
+        border-radius: 5px;
+      }
+      &::after {
+        position: absolute;
+        content: '';
+        width: 25px;
+        height: 2px;
+        top: 6px;
+        left: 0;
+        background: #43b0ef;
+        border-radius: 5px;
+      }
+    }
+    .icon-cross {
+      margin-left: 15px;
+    }
+  }
+
+  .backdrop.is-open {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .backdrop {
+    display: block;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 998;
+    background-color: rgba(0, 0, 0, 0.2);
+    overflow: auto;
+    opacity: 0;
+    pointer-events: none;
+    overflow-y: hidden;
+    transition: opacity 300ms linear;
+
+    .nav {
+      display: block;
+      margin: 0 auto;
+
+      &__item {
+        display: flex;
+        flex-direction: column;
+      }
+      &__link {
+        margin-right: 0;
+        margin-left: 0;
+        padding: 27px 43px 26px;
+        border-bottom: 1px solid #e5e5e5;
+        & a {
+          text-decoration: none;
+          color: #4f4f4f;
+          font-size: 16px;
+          line-height: 24px;
+          font-weight: 400;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+
+  .backdrop.is-open .menu-container {
+    left: 0;
+    transition: right 550ms cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08),
+      0px 1px 3px rgba(0, 0, 0, 0.16);
+  }
+
+  .menu-container {
+    position: absolute;
+    top: 0;
+    // left: -100%;
+    z-index: 999;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    padding-top: 15px;
+    padding-bottom: 70px;
+    background-color: #fff;
+    transition: right 550ms cubic-bezier(0.4, 0, 0.2, 1);
+    .nav {
+    }
+  }
+
+  /* footer*/
+  .site-footer {
+    .container {
+      padding: 0 15px;
+      display: flex;
+      flex-direction: column;
+
+      .nav {
+        align-self: self-end;
+        margin-bottom: 23px;
+
+        &__item {
+          flex-direction: column;
+        }
+        &__link {
+          margin: 0;
+          margin-bottom: 18px;
+
+          &:first-child {
+            margin: 0;
+            margin-bottom: 18px;
+          }
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+
+    &__logo {
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+  }
+  .social-media {
+    flex-direction: column;
+    margin-bottom: 30px;
+
+    &__facebook {
+      flex-direction: column;
+      margin-bottom: 30px;
+
+      &:before {
+        width: 30px;
+        height: 1px;
+        left: 40px;
+        top: 32px;
+      }
+
+      & h4 {
+        margin-bottom: 25px;
+        margin-left: 0;
+        margin-right: 0;
+      }
+    }
+
+    &__title {
+      margin: 0 auto;
+      max-width: 100%;
+    }
+
+    .svg-facewhite {
+      margin-top: -2px;
+      margin: 0 auto;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .social-media {
+    &__title {
+      font-size: 8px;
+    }
+    &__facebook {
+      margin-bottom: 24px;
+
+      & h4 {
+        font-size: 14px;
+      }
+      &::before {
+        width: 30px;
+        height: 1px;
+        left: 22px;
+        top: 24px;
+        opacity: 0.4;
+      }
+    }
+  }
 }

@@ -1,7 +1,7 @@
+@import 'terms.scss';
 @import 'styles.scss';
 @import 'header.scss';
 @import 'footer.scss';
-@import 'terms.scss';
 @import 'media.scss';
 
 /* style all */
@@ -583,10 +583,7 @@
 /* slider */
 .content {
   position: relative;
-  padding-top: 156px;
-  padding-left: 172px;
-  padding-right: 260px;
-  padding-bottom: 214px;
+  padding: 156px 260px 140px 172px;
 }
 
 .btns-container {
@@ -627,7 +624,6 @@
 
 .slick-container {
   position: relative;
-  height: 176px;
 }
 
 .slick-wrapper {

@@ -4,8 +4,8 @@ $('.slick-vertical').slick({
 
     slidesToShow: 1,
 
-    speed: 500,
-    // autoplay: true,
+    speed: 700,
+    autoplay: true,
     dots: true,
 
     prevArrow: $('.btn-next'),

@@ -1,17 +1,18 @@
 <?php
 /**
- * The template for displaying 404 pages (not found)
- *
- * @link https://codex.wordpress.org/Creating_an_Error_404_Page
- *
- * @package coelix
- */
-
+* Template Name: Terms page
+*
+* @package WordPress
+* @subpackage Coelix
+* @since Coelix 1.0
+*/
 get_header();
+
 ?>
 
 <main id="primary" class="site-main">
-   <!-- <section class="terms">
+
+   <section class="terms">
       <div class="container">
          <div class="text-page">
             <div class="text-page__main">
@@ -234,9 +235,11 @@ get_header();
             </div>
          </div>
       </div>
-   </section> -->
+   </section>
+
 
 </main>
 
 <?php
+get_sidebar();
 get_footer();
