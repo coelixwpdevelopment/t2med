@@ -1,3 +1,5 @@
+require('jquery-nice-select');
+
 $(document).ready(function() {
   $('.application-form-select').niceSelect();
 
@@ -38,7 +40,7 @@ $(document).ready(function() {
         contentType: false,
         data: data,
         success: function(response) {
-          if(response === 1) {
+          if(response === '1') {
             $('.app-form-success').addClass('app-form-success__open');
             $("body").css("overflow", "hidden");
           } else {
