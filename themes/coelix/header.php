@@ -38,7 +38,7 @@
             </button>
             <div class="logo">
                <div class="logo__item-2">
-                  <img src="http://localhost/t2med/wp-content/uploads/2021/01/Medicine_Eng.png" alt="">
+                  <img src="<?= get_template_directory_uri().'/assets/images/Medicine_Eng.png' ?>" alt="">
                </div>
                <div class="logo__item-1">
                   <a href="<?= get_home_url() . '/index.php' ?>">
@@ -55,7 +55,7 @@
                         <path d="M11.4179 30.0788L11.7164 30.4945L11.8657 36.276C11.8657 36.276 11.6791 44.0602 14.1791 43.8713C16.6791 43.6823 19.403 43.0777 21.6045 40.8483C23.806 38.6188 21.6045 36.2382 21.6045 36.2382C21.6045 36.2382 21.2687 36.6539 20.1493 37.6741C19.0299 38.6944 17.7612 39.4879 16.9776 39.7524C16.2313 40.017 15.0373 41.3773 15 36.0871C14.9627 30.7968 14.8881 30.4567 14.8881 30.4567L15.2239 30.0411H11.4179V30.0788Z" fill="#1E335C" />
                         <path d="M30.8209 25.5443C33.1289 25.5443 35 23.6495 35 21.3121C35 18.9748 33.1289 17.0799 30.8209 17.0799C28.5128 17.0799 26.6418 18.9748 26.6418 21.3121C26.6418 23.6495 28.5128 25.5443 30.8209 25.5443Z" fill="#1E335C" />
                      </svg>
-                     <img src="http://localhost/t2med/wp-content/uploads/2021/01/T2MED.png" alt="">
+                     <img src="<?= get_template_directory_uri().'/assets/images/T2MED.png' ?>" alt="">
                   </a>
                </div>
             </div>

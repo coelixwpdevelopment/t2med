@@ -16,7 +16,7 @@
 
    <div class="container">
       <div class="site-footer__logo">
-         <img src="http://localhost/t2med/wp-content/uploads/2021/01/Medicine_Eng1-1.png" alt="">
+         <img src="<?= get_template_directory_uri().'/assets/images/Medicine_Eng-white.png' ?>" alt="">
       </div>
       <nav class="nav">
          <ul class="nav__item">
