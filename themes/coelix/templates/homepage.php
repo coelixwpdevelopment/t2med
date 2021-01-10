@@ -281,10 +281,6 @@ get_header();
 					<?php endforeach; ?>
 
 					</div>
-					<div class="btns-container">
-                     <div class="spons-next"></div>
-                     <div class="spons-prev"></div>
-               </div>
             </div>
          </div>
       </section>

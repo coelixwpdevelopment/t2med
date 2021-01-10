@@ -98,11 +98,12 @@ $('.slick-vertical').slick({
 });
 
 /* sponsors */ 
+
 $('.js-block-info').slick({
   infinite: true,
   slidesToShow: 1,
   slidesToScroll: 1,
-  arrows: false,
+  arrows: true,
   dots: true,
   rtl: false,
   responsive: [
