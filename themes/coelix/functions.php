@@ -153,6 +153,7 @@ function coelix_scripts() {
         wp_register_script( 'jquery', ( 'https://code.jquery.com/jquery-3.5.1.min.js' ), false, null, true );
 		  wp_enqueue_script( 'jquery' );
 		  wp_enqueue_script( 'coelix-slick', 'https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js', array(), '20151215', true );
+		  
 		  wp_enqueue_script( 'coelix-burger-script', get_template_directory_uri() . '/assets/js/burger-menu.js', array(), '20151215', true );
    }
 
