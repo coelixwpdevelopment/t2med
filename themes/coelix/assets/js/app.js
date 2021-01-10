@@ -98,16 +98,14 @@ $('.slick-vertical').slick({
 });
 
 /* sponsors */ 
+
 $('.js-block-info').slick({
   infinite: true,
   slidesToShow: 1,
   slidesToScroll: 1,
-  arrows: false,
+  arrows: true,
   dots: true,
   rtl: false,
-
-  prevArrow: $('.spons-next'),
-  nextArrow: $('.spons-prev'),
   responsive: [
       {
           breakpoint: 9999,
@@ -117,7 +115,7 @@ $('.js-block-info').slick({
           breakpoint: 999,
           settings: {
               dots: true,
-              slidesToShow: 3,
+              slidesToShow: 2,
           }
       }
   ]
