@@ -1,3 +1,5 @@
+require('jquery-nice-select');
+
 $(document).ready(function() {
   $('.application-form-select').niceSelect();
 
@@ -10,8 +12,6 @@ $(document).ready(function() {
       let placeholder = $(this).data('placeholder');
 
       $input.on('change', function(e) {
-      
-        console.log(this);
         
         if (e.target.files && e.target.files.length) {
           let filename = e.target.files[0].name;
@@ -23,9 +23,35 @@ $(document).ready(function() {
     });
   }
 
+  // Texareas maxlength display
+  if ($('.application-form-textarea').length) {
+    $('.application-form-textarea').each(function(){
+      let $input = $(this).find('.application-form-textarea__input');
+      if($input[0].hasAttribute('maxlength')){
+        let $symbols_count = $(this).find('.application-form-textarea__symbols-count');
+        let max_symbols_count = $input.attr('maxlength');
+        $symbols_count.text( max_symbols_count + '/0');
+        $input.on('input', function(e){
+          $symbols_count.text(max_symbols_count + '/' + this.value.length);
+        });
+      }
+    });
+  }
+
 
   //application form logic
   if($('.p-app-form__application-form').length){
+
+    $('input[name="have_idea"]').on('change', function(){
+      let $idea_desc = $('.js-idea-desc');
+      if(this.value === 'Yes'){
+        $idea_desc.show();
+      }
+      else{
+        
+        $idea_desc.hide();
+      }
+    });
 
     $('.p-app-form__application-form').on('submit', function(e){
       e.preventDefault();
@@ -38,7 +64,7 @@ $(document).ready(function() {
         contentType: false,
         data: data,
         success: function(response) {
-          if(response === 1) {
+          if(response === '1') {
             $('.app-form-success').addClass('app-form-success__open');
             $("body").css("overflow", "hidden");
           } else {

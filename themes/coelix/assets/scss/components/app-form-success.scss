@@ -92,4 +92,10 @@
     background: url('/wp-content/themes/coelix/assets/images/pages/app-form/app-form-success-bottom.svg') no-repeat center;
     background-size: contain;
   }
+  @media (max-width: 1092px){
+    &__top-figure,
+    &__bottom-figure{
+      display: none;
+    }
+  }
 }

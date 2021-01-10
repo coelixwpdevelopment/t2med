@@ -5,10 +5,12 @@ add_action( 'wp_ajax_nopriv_application-form-submit', 'application_form_handle' 
 function application_form_handle() {
   //var_dump($_FILES);
 
-  $to = 'a.shkuropatov.workbox@gmail.com';
+  $to = 'tirionmao@gmail.com';
   $subject = 'Application form has been submitted';
   $message = '';
-  $headers = [];
+  $headers = [
+    'content-type: text/html',
+  ];
   $attachments = [];
 
   $message .= 'שם פרטי בעברית' . '<br>' . $_POST['fname'] . '<br>';
