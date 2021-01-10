@@ -185,6 +185,10 @@
       flex-direction: column;
       margin-bottom: 30px;
 
+      & a {
+        margin: 0 auto;
+      }
+
       &:before {
         width: 30px;
         height: 1px;
