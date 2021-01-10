@@ -21,6 +21,10 @@
       integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
       crossorigin="anonymous"></script>
 
+   <script type='text/javascript'>
+   var ajaxUrl = '<?php echo admin_url('admin-ajax.php'); ?>';
+   </script>
+
    <?php wp_head(); ?>
 </head>
 
@@ -97,7 +101,7 @@
                      <a href="#">Pitch an idea</a>
                   </li>
                   <li class="nav__link">
-                     <a href="#">Log in</a>
+                     <a href="<?= get_home_url().'/application-form'?>">Log in</a>
                   </li>
                </ul>
             </nav>

@@ -1,10 +1,22 @@
-@import 'terms.scss';
+@import '../../node_modules/jquery-nice-select/scss/nice-select.scss';
+
+@import 'vars.scss';
 @import 'styles.scss';
+@import 'terms.scss';
 @import 'header.scss';
 @import 'footer.scss';
 @import 'media.scss';
 
+@import 'utils/index.scss';
+@import 'components/index.scss';
+@import 'pages/index.scss';
+
 /* style all */
+*,
+:after,
+:before {
+  box-sizing: inherit;
+}
 .title {
   &__awards {
     padding-top: 110px;
@@ -60,13 +72,23 @@
     text-align: center;
     text-transform: uppercase;
   }
+  &__form {
+    padding-top: 110px;
+    color: #fff;
+    margin-bottom: 80px;
+    font-size: 52px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    margin-right: 50px;
+  }
 }
 /* <style all> */
 
 /* section-one */
 
 .section-one {
-  background: url("http://t2med/wp-content/uploads/2021/01/bg-main.png")
+  background: url('http://t2med/wp-content/uploads/2021/01/bg-main.png')
     no-repeat;
   background-size: cover;
   height: auto;
@@ -112,7 +134,7 @@
 
     &::before {
       position: absolute;
-      content: "";
+      content: '';
 
       top: 23px;
       right: -30px;
@@ -167,7 +189,7 @@
     color: #43b0ef;
 
     &::before {
-      content: "";
+      content: '';
       position: absolute;
 
       top: 5px;
@@ -363,7 +385,7 @@
 /* section-three */
 
 .section-three {
-  background: url("http://t2med/wp-content/uploads/2021/01/bg-images-3-1.png")
+  background: url('http://t2med/wp-content/uploads/2021/01/bg-images-3-1.png')
     no-repeat;
   background-size: cover;
   height: auto;
@@ -687,7 +709,7 @@
 
 /* section-five */
 .section-five {
-  background: url("http://t2med/wp-content/uploads/2021/01/bg-images-4.png")
+  background: url('http://t2med/wp-content/uploads/2021/01/bg-images-4.png')
     no-repeat;
   background-size: cover;
   height: auto;
@@ -849,7 +871,7 @@
 
     &:before {
       position: absolute;
-      content: "";
+      content: '';
       top: 47px;
       left: 0;
       max-width: 113px;
@@ -868,7 +890,7 @@
 
     &:before {
       position: absolute;
-      content: "";
+      content: '';
       top: 75px;
       left: 0;
       max-width: 113px;
@@ -913,7 +935,7 @@
 /* section-seven */
 
 .section-seven {
-  background: url("http://t2med/wp-content/uploads/2021/01/bg-images-3-1.png")
+  background: url('http://t2med/wp-content/uploads/2021/01/bg-images-3-1.png')
     no-repeat;
   background-size: cover;
   height: auto;
@@ -1055,12 +1077,12 @@
     }
     &::before {
       position: absolute;
-      content: "";
+      content: '';
 
       top: 7px;
       left: -40px;
 
-      background: url("http://t2med/wp-content/uploads/2021/01/mail.png")
+      background: url('http://t2med/wp-content/uploads/2021/01/mail.png')
         no-repeat;
       width: 20px;
       height: 15px;
@@ -1075,12 +1097,12 @@
 
     &::before {
       position: absolute;
-      content: "";
+      content: '';
 
       top: 2px;
       left: -38px;
 
-      background: url("http://t2med/wp-content/uploads/2021/01/location.png");
+      background: url('http://t2med/wp-content/uploads/2021/01/location.png');
       width: 16px;
       height: 19px;
     }
@@ -1098,12 +1120,12 @@
 
     &::before {
       position: absolute;
-      content: "";
+      content: '';
 
       top: 6px;
       left: -39px;
 
-      background: url("http://t2med/wp-content/uploads/2021/01/facebook.png");
+      background: url('http://t2med/wp-content/uploads/2021/01/facebook.png');
       width: 18px;
       height: 17px;
     }
@@ -1111,3 +1133,98 @@
 }
 
 /* <section-eight> */
+
+/* section-nine */
+
+.section-nine {
+  background: url('http://t2med/wp-content/uploads/2021/01/bg-images-2-1.png')
+    no-repeat;
+  background-size: cover;
+  height: auto;
+  .container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 30px;
+  }
+}
+
+.forms {
+  max-width: 800px;
+  width: 100%;
+  height: 455px;
+  margin: 0 auto;
+  padding: 0 15px;
+  padding-bottom: 80px;
+}
+
+/* coldera custom style */
+
+.field_required {
+  display: none !important;
+}
+.caldera-grid .alert-success {
+}
+.caldera-grid .col-sm-6 {
+  width: 49%!important;
+}
+
+#fld_8768091_1, //first name
+#fld_9970286_1, //last name
+#fld_313534_1, //subject
+#fld_6009157_1 {
+  //email
+  max-width: 361px !important;
+  width: 100% !important;
+  height: 54px !important;
+  background: #ffffff !important;
+  border: 2px solid #e8e8e8 !important;
+  box-sizing: border-box !important;
+  margin-bottom: 30px!important;
+}
+#fld_7683514_1 {
+  //message
+  max-width: 754px !important;
+  width: 100% !important;
+  height: auto !important;
+
+  background: #ffffff !important;
+  border: 2px solid #e8e8e8 !important;
+  box-sizing: border-box !important;
+  margin-bottom: 40px !important;
+}
+
+#fld_7908577_1 {
+  //submit
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  align-items: center !important;
+  padding: 18px 121px !important;
+
+  position: absolute !important;
+  max-width: 278px !important;
+  width: 100% !important;
+  height: 46px !important;
+  background: #43b0ef !important;
+
+  font-weight: bold !important;
+  font-size: 16px !important;
+  line-height: 28px !important;
+  color: #ffffff !important;
+  margin-left: 29% !important;
+}
+
+// label
+.caldera-grid label {
+  position: absolute!important;
+  padding: 19px 0px 0px 25px!important;
+  top: 0!important;
+  font-weight: normal!important;
+  font-size: 15px!important;
+  line-height: 16px!important;
+
+  letter-spacing: 0.1px!important;
+
+  color: #b0b0b0!important;
+}
+

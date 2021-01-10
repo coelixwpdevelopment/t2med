@@ -187,6 +187,11 @@ require get_template_directory() . '/inc/template-functions.php';
 require get_template_directory() . '/inc/customizer.php';
 
 /**
+ * Ajax Application form handler
+ */
+require get_template_directory() . '/inc/application-form-handler.php';
+
+/**
  * Load Jetpack compatibility file.
  */
 if ( defined( 'JETPACK__VERSION' ) ) {
