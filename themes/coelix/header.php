@@ -82,8 +82,39 @@
                </ul>
             </nav>
             <div class="languages">
+
+
                <div class="lang-option">
-                  <div class="lang-items">
+
+                  <?php add_action('wpml_custom_switcher', 'wpml_custom_switcher', 10, 1);
+                  function wpml_custom_switcher () {
+                  $languages = icl_get_languages();
+                  $active_language = array_filter( $languages, function ( $var ) {
+                     return ($var['active'] == 1);
+                  } );
+                  $active_language = reset( $active_language );
+                  ?>
+                  <div class="language-switcher">
+                     <span>
+                        <img src="<?= $active_language['country_flag_url'] ?>">
+                        <?= $active_language['language_code'] ?>
+                     </span>
+                     <ul class="language-switcher__list">
+                        <?php foreach ($languages as $lang):
+                           if(!$lang['active']):?>
+                              <li>
+                                 <img src="<?= $lang['country_flag_url'] ?>">
+                                 <a href="<?= $lang['url'] ?>"><?= $lang['language_code'] ?></a>
+                              </li>
+                           <?php endif;?>
+                        <?php endforeach; ?>
+                     </ul>
+                  </div>
+                  <?php } 
+                  wpml_custom_switcher();
+                  ?>
+
+                  <!-- <div class="lang-items">
                      <div class="lang-us">
                         <svg class="svg-us" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
                            <circle style="fill:#F0F0F0;" cx="256" cy="256" r="256" />
@@ -184,7 +215,7 @@
                         </svg>
                         <div class="he">HE</div>
                      </div>
-                  </div>
+                  </div> -->
                   <div class="arrow-down"></div>
                </div>
             </div>

@@ -84,6 +84,50 @@
     .arrow-down {
       transform: rotate(180deg);
     }
+
+    .language-switcher{
+      ul{
+        transition: all 0.5 ease-in;
+        visibility: visible;
+        position: initial;
+      }
+    }
+  }
+
+  .language-switcher{
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    span{
+      display: flex;
+      align-items: center;
+    }
+
+    img{
+      margin-right: 5px;
+      width: 32px;
+      height: 32px;
+    }
+
+    ul{
+      margin-top: 11px;
+      visibility: hidden;
+      position: absolute;
+    }
+
+    li{
+      display: flex;
+      align-items: center;
+    }
+
+    a,
+    a:hover,
+    a:focus,
+    :active{
+      text-decoration: none;
+      color: #000;
+    }
   }
 }
 
