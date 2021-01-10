@@ -15,8 +15,10 @@
 get_header();
 ?>
 
-<main id="primary" class="site-main">
+<!-- <main id="primary" class="site-main">
 
+   <?php $section = get_field('first_screen_');?>
+    
    <section class="section-one">
       <div class="container">
          <div class="timers">
@@ -50,7 +52,7 @@ get_header();
          <div class="main-info">
             <h1>T<span>2</span>MED</h1>
             <div class="main-info__startup">
-               <p class="main-info__startup-days">3 day</p>
+               <p class="main-info__startup-days"><?= $section ['day'] ?></p>
                <p class="main-info__startup-txt">startup</p>
             </div>
             <div class="main-info__dates">
@@ -68,7 +70,7 @@ get_header();
    <section class="section-two">
       <div class="left-background">
          <div class="figure-background">
-            <img class="left-top" src="http://t2med/wp-content/uploads/2021/01/medic__top-left.png" alt="">
+            <img class="left-top" src="<?= get_template_directory_uri().'/assets/images/medic__top-left.png' ?> " alt="">
          </div>
          <div class="figure-background">
             <img class="left-bottom" src="http://t2med/wp-content/uploads/2021/01/medic__bottom-left.png" alt="">
@@ -526,7 +528,7 @@ get_header();
          </div>
       </div>
    </section>
-</main>
+</main> -->
 
 <?php
 get_sidebar();
