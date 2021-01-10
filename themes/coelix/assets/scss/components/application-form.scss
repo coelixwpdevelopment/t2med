@@ -74,7 +74,7 @@
 }
 
 .application-form-text-field,
-.application-form-textarea{
+.application-form-textarea__input{
   max-width: 100%;
   min-width: 0;
   width: 100%;
@@ -94,9 +94,19 @@
 }
 
 .application-form-textarea{
-  padding-top: 10px;
-  height: 134px;
-  resize: none;
+  position: relative;
+  &__input{
+    padding-top: 10px;
+    height: 134px;
+    resize: none;
+  }
+  &__symbols-count{
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    pointer-events: none;
+    color: #BDBDBD;
+  }
 }
 
 .application-form-select{

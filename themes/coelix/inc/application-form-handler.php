@@ -8,7 +8,9 @@ function application_form_handle() {
   $to = 'a.shkuropatov.workbox@gmail.com';
   $subject = 'Application form has been submitted';
   $message = '';
-  $headers = [];
+  $headers = [
+    'content-type: text/html',
+  ];
   $attachments = [];
 
   $message .= 'שם פרטי בעברית' . '<br>' . $_POST['fname'] . '<br>';
