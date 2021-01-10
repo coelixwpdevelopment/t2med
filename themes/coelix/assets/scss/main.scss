@@ -1112,12 +1112,20 @@
 .content {
   position: relative;
   padding: 156px 260px 140px 172px;
+  @media screen and (max-width: 768px){
+    padding: 0;
+    height: 420px;
+  }
 }
 
 .btns-container {
   width: 47px;
   position: absolute;
   bottom: 80px;
+  @media screen and (max-width: 768px){
+    top: 27px;
+    right: 29px;
+  }
 }
 
 .slick-dots {
@@ -1125,6 +1133,14 @@
   flex-direction: column;
   bottom: 20px;
   left: -60px;
+  @media screen and (max-width:998px){
+    bottom: 0px;
+    left: 0px;
+  }
+  @media screen and (max-width:768px){
+    bottom: 25px;
+    left: 20px;
+  }
 }
 .slick-dots li button:before {
   font-size: 10px;
@@ -1499,8 +1515,19 @@
   background: rgba(67, 176, 239, 0.8);
   height: auto;
   position: relative;
-}
 
+  .slick-dots {
+    display: block;
+    bottom: -27px;
+    left: 3px;
+  }
+}
+.slick-prev {
+  left: 0px;
+}
+.slick-next  {
+  left: 0px;
+}
 .sponsors-block {
   max-width: 1560px;
   display: flex;
