@@ -105,9 +105,6 @@ $('.js-block-info').slick({
   arrows: false,
   dots: true,
   rtl: false,
-
-  prevArrow: $('.spons-next'),
-  nextArrow: $('.spons-prev'),
   responsive: [
       {
           breakpoint: 9999,
@@ -118,6 +115,9 @@ $('.js-block-info').slick({
           settings: {
               dots: true,
               slidesToShow: 3,
+              arrows: true,
+              prevArrow: $('.spons-next'),
+              nextArrow: $('.spons-prev'),
           }
       }
   ]
