@@ -41,6 +41,12 @@
     font-weight: 700;
     text-align: center;
     text-transform: uppercase;
+    @media screen and (max-width: 768px) {
+      padding-top: 45px;
+      font-size: 28px;
+      line-height: 20px;
+      margin-bottom: 20px;
+    }
   }
   &__team {
     padding-top: 110px;
@@ -50,6 +56,12 @@
     font-weight: 700;
     text-align: center;
     text-transform: uppercase;
+    @media screen and (max-width: 768px) {
+      padding-top: 50px;
+      font-size: 28px;
+      line-height: 20px;
+      margin-bottom: 105px;
+    }
   }
   &__faq {
     padding-top: 110px;
@@ -59,6 +71,12 @@
     font-weight: 700;
     text-align: center;
     text-transform: uppercase;
+    @media screen and (max-width: 768px) {
+      padding-top: 56px;
+      font-size: 28px;
+      line-height: 20px;
+      margin-bottom: 21px;
+    }
   }
   &__sponsors {
     padding-top: 155px;
@@ -68,6 +86,12 @@
     font-weight: 700;
     text-align: center;
     text-transform: uppercase;
+    @media screen and (max-width: 768px) {
+      padding-top: 56px;
+      font-size: 28px;
+      line-height: 20px;
+      margin-bottom: 21px;
+    }
   }
   &__contact {
     padding-top: 110px;
@@ -77,6 +101,12 @@
     font-weight: 700;
     text-align: center;
     text-transform: uppercase;
+    @media screen and (max-width: 768px) {
+      padding-top: 84px;
+      font-size: 28px;
+      line-height: 20px;
+      margin-bottom: 31px;
+    }
   }
   &__form {
     padding-top: 110px;
@@ -87,6 +117,14 @@
     text-align: center;
     text-transform: uppercase;
     margin-right: 50px;
+    @media screen and (max-width: 768px) {
+      padding-top: 40px;
+      font-size: 28px;
+      line-height: 20px;
+      margin: 0 auto;
+      margin-bottom: 30px;
+      
+    }
   }
 }
 /* <style all> */
@@ -334,8 +372,8 @@
       font-size: 16px;
       line-height: 14px;
       font-weight: normal;
-      border-color: #43B0EF;
-      color: #43B0EF;
+      border-color: #43b0ef;
+      color: #43b0ef;
       width: 243px;
       height: 38px;
       padding: 0;
@@ -552,7 +590,7 @@
       @media screen and (max-width: 768px) {
         display: none;
       }
-      
+
       & h4 {
         font-size: 18px;
         line-height: 15px;
@@ -604,6 +642,7 @@
   @media screen and (max-width: 768px) {
     flex-direction: column;
     padding-bottom: 57px;
+    align-items: center;
   }
 
   &__item-1 {
@@ -698,7 +737,7 @@
         width: auto;
         margin-left: auto;
         margin-right: auto;
-      } 
+      }
       @media screen and (max-width: 1004px) {
         position: relative;
         left: -40px;
@@ -1014,6 +1053,10 @@
     padding: 0 30px;
     margin: 0 auto;
     padding-bottom: 90px;
+    @media screen and (max-width: 768px) {
+      padding: 0 24px;
+      padding-bottom: 45px;
+    }
   }
 }
 .ticket-block {
@@ -1031,6 +1074,11 @@
       max-width: 117px;
       width: 100%;
       height: auto;
+      @media screen and (max-width: 768px) {
+        max-width: 51px;
+        width: 100%;
+        height: auto;
+      }
     }
     .bottom-left {
       position: absolute;
@@ -1040,6 +1088,9 @@
       max-width: 117px;
       width: 100%;
       height: auto;
+      @media screen and (max-width: 768px) {
+        display: none;
+      }
     }
     .bottom-right {
       position: absolute;
@@ -1049,6 +1100,11 @@
       max-width: 404px;
       width: 100%;
       height: auto;
+      @media screen and (max-width: 768px) {
+        max-width: 118px;
+        width: 100%;
+        height: auto;
+      }
     }
   }
 }
@@ -1115,6 +1171,9 @@
     line-height: 28px;
     color: #032954;
     margin-bottom: 50px;
+    @media screen and (max-width: 768px) {
+      font-size: 24px;
+    }
   }
 
   & p {
@@ -1136,6 +1195,9 @@
     text-align: right;
     color: #1f3c67;
     // margin-right: -70px;
+    @media screen and (max-width: 768px) {
+      font-size: 88px;
+    }
 
     & span {
       font-weight: bold;
@@ -1143,6 +1205,9 @@
       line-height: 20px;
       text-transform: uppercase;
       color: #1f3c67;
+      @media screen and (max-width: 768px) {
+        font-size: 22px;
+      }
     }
   }
 
@@ -1152,6 +1217,9 @@
     line-height: 20px;
     text-transform: uppercase;
     color: #1f3c67;
+    @media screen and (max-width: 768px) {
+      font-size: 22px;
+    }
   }
 }
 
@@ -1168,6 +1236,9 @@
     padding: 0 30px;
     margin: 0 auto;
   }
+  @media screen and(max-width:768px) {
+    background: po;
+  }
 }
 
 .team {
@@ -1175,6 +1246,11 @@
   margin: 0 auto;
   display: flex;
   padding-bottom: 92px;
+  @media screen and(max-width:768px) {
+    flex-direction: column;
+    padding-bottom: 0px;
+    align-items: center;
+  }
 
   &__item {
     max-width: 360px;
@@ -1185,7 +1261,13 @@
 
     text-align: center;
     margin-right: 30px;
-
+    @media screen and (max-width: 768px) {
+      margin-right: 0px;
+      margin-bottom: 120px;
+      &:last-child {
+        margin-bottom: 56px;
+      }
+    }
     &:last-child {
       margin-right: 0px;
     }
@@ -1193,11 +1275,20 @@
 
   &__item-img {
     margin-bottom: 25px;
+    @media screen and(max-width: 768px) {
+      margin-bottom: 11px;
+      margin-top: 17px;
+    }
 
     & img {
       border-radius: 50%;
       border: 5px solid #43b0ef;
       margin-top: -90px;
+      @media screen and(max-width:768px) {
+        max-width: 110px;
+        width: 100%;
+        height: auto;
+      }
     }
   }
 
@@ -1207,6 +1298,10 @@
     color: #1f3c67;
     text-transform: uppercase;
     margin-bottom: 12px;
+    @media screen and (max-width: 768px) {
+      margin-bottom: 0;
+      font-size: 20px;
+    }
   }
 
   &__item-position {
@@ -1214,6 +1309,9 @@
     line-height: 24px;
     color: #bdbdbd;
     padding-bottom: 40px;
+    @media screen and (max-width: 768px) {
+      padding-bottom: 23px;
+    }
   }
 }
 
@@ -1392,6 +1490,9 @@
 
   .container {
     padding-bottom: 235px;
+    @media screen and (max-width: 768px){
+      padding-bottom: 62px;
+    }
   }
 }
 .sponsors-ticket {
@@ -1463,20 +1564,37 @@
 .section-eight {
   background: #f5f5f5;
   padding-bottom: 120px;
+  @media screen and (max-width: 998px) {
+    padding-bottom: 0px;
+  }
 
   .container {
     max-width: 1530px;
     padding: 0 30px;
     margin: 0 auto;
+    @media screen and (max-width: 998px) {
+      padding: 0 0px;
+      position: relative;
+      background: #fff;
+    }
   }
 }
 
 .contact-block {
   display: flex;
-
+  @media screen and(max-width:998px) {
+    flex-direction: column;
+    align-items: center;
+  }
+  @media screen and(max-width:768px) {
+  }
+  @media screen and(max-width:414px) {
+  }
   &__left-position {
     position: relative;
     background: #fff;
+    @media screen and(max-width:998px) {
+    }
   }
 
   &__right-position {
@@ -1495,17 +1613,30 @@
       position: absolute;
       top: 0;
       left: 0;
+      @media screen and (max-width: 768px) {
+        top: -73.5%;
+        left: -4px;
+      }
     }
     .bottom-left {
       position: absolute;
       bottom: 0;
       left: 0;
+      @media screen and (max-width: 768px) {
+        top: -59%;
+        left: 92%
+      }
     }
 
     & img {
       max-width: 109px;
       width: 100%;
       height: auto;
+      @media screen and (max-width: 768px) {
+        max-width: 60px;
+        width: 100%;
+        height: auto;
+      }
     }
   }
 
@@ -1513,6 +1644,9 @@
 
   &__info {
     padding: 123px 202px 100px 230px;
+    @media screen and (max-width: 768px) {
+      padding: 0 90px 0px;
+    }
   }
   &__info-mail {
     position: relative;
@@ -1525,18 +1659,6 @@
       line-height: 28px;
       text-decoration: none;
     }
-    // &::before {
-    //   position: absolute;
-    //   content: '';
-
-    //   top: 7px;
-    //   left: -40px;
-
-    //   background: url('http://t2med/wp-content/uploads/2021/01/mail.png')
-    //     no-repeat;
-    //   width: 20px;
-    //   height: 15px;
-    // }
   }
   &__info-text {
     position: relative;
@@ -1544,18 +1666,6 @@
     font-size: 18px;
     line-height: 24px;
     color: #252b42;
-
-    &::before {
-      position: absolute;
-      content: '';
-
-      top: 2px;
-      left: -38px;
-
-      background: url('http://localhost/t2med/wp-content/uploads/2021/01/location.png');
-      width: 16px;
-      height: 19px;
-    }
   }
   &__info-facebook {
     position: relative;
@@ -1566,18 +1676,6 @@
       line-height: 28px;
       text-decoration: none;
       text-transform: capitalize;
-    }
-
-    &::before {
-      position: absolute;
-      content: '';
-
-      top: 6px;
-      left: -39px;
-
-      background: url('http://localhost/t2med/wp-content/uploads/2021/01/facebook.png');
-      width: 18px;
-      height: 17px;
     }
   }
 }
@@ -1595,6 +1693,9 @@
     max-width: 1440px;
     margin: 0 auto;
     padding: 0 30px;
+    @media screen and (max-width: 768px){
+      padding: 0 20px;
+    }
   }
 }
 
@@ -1605,6 +1706,9 @@
   margin: 0 auto;
   padding: 0 15px;
   padding-bottom: 80px;
+  @media screen and (max-width: 768px){
+    padding: 0px;
+  }
 }
 
 /* coldera custom style */
@@ -1615,7 +1719,7 @@
 .caldera-grid .alert-success {
 }
 .caldera-grid .col-sm-6 {
-  width: 49%!important;
+  width: 49% !important;
 }
 
 #fld_8768091_1, //first name
@@ -1629,7 +1733,7 @@
   background: #ffffff !important;
   border: 2px solid #e8e8e8 !important;
   box-sizing: border-box !important;
-  margin-bottom: 30px!important;
+  margin-bottom: 30px !important;
 }
 #fld_7683514_1 {
   //message
@@ -1666,15 +1770,14 @@
 
 // label
 .caldera-grid label {
-  position: absolute!important;
-  padding: 19px 0px 0px 25px!important;
-  top: 0!important;
-  font-weight: normal!important;
-  font-size: 15px!important;
-  line-height: 16px!important;
+  position: absolute !important;
+  padding: 19px 0px 0px 25px !important;
+  top: 0 !important;
+  font-weight: normal !important;
+  font-size: 15px !important;
+  line-height: 16px !important;
 
-  letter-spacing: 0.1px!important;
+  letter-spacing: 0.1px !important;
 
-  color: #b0b0b0!important;
+  color: #b0b0b0 !important;
 }
-

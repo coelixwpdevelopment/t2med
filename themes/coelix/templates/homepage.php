@@ -198,7 +198,7 @@ get_header();
 
 		<?php $section = get_field('team'); ?>
 
-      <section class="section-five" style="background: url(<?= get_template_directory_uri().'/assets/images/bg-images-4.png' ?>) no-repeat;">
+      <section class="section-five" style="background: url(<?= get_template_directory_uri().'/assets/images/bg-images-4.png' ?>) no-repeat; background-size: cover; height: auto;">
          <div class="container">
             <h2 class="title__team"><?= $section ['title'] ?></h2>
             <div class="team">
