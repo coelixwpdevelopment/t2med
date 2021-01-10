@@ -97,4 +97,28 @@ $('.slick-vertical').slick({
     nextArrow: $('.btn-prev'),
 });
 
+/* sponsors */ 
+$('.js-block-info').slick({
+  infinite: true,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: false,
+  dots: true,
+  rtl: false,
 
+  prevArrow: $('.spons-next'),
+  nextArrow: $('.spons-prev'),
+  responsive: [
+      {
+          breakpoint: 9999,
+          settings: "unslick"
+      },
+      {
+          breakpoint: 999,
+          settings: {
+              dots: true,
+              slidesToShow: 3,
+          }
+      }
+  ]
+});
