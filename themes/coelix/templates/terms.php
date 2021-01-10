@@ -14,9 +14,8 @@ get_header();
 
    <section class="terms">
       <div class="container">
-         <div class="text-page">
-         <?php the_content(); ?>  
-            <!-- <div class="text-page__main">
+         <div class="text-page">  
+            <div class="text-page__main">
                <h1 class="text-page__main-title">T2MED competition rules</h1>
                <p class="text-page__main-text">1. The T2Med Competition, (hereinafter “the Competition”), is a learning
                   activity
@@ -233,7 +232,7 @@ get_header();
                   value, in accordance with technical constraints or the committee’s judgement.
 
                </p>
-            </div> -->
+            </div>
          </div>
       </div>
    </section>
