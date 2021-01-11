@@ -64,3 +64,27 @@
  .svg-facewhite {
    margin-top: -2px;
  }
+ .rtl {
+   .social-media{
+     &__facebook {
+
+       & h4 {
+         margin-left:15px;
+         margin-right: unset;
+       }
+       &::before{
+        left: -35px;
+        right: unset;
+       }
+     }
+     &__title {
+       margin-right: 58px;
+       margin-left: unset;
+     }
+   }
+   .site-footer {
+     .nav {
+       margin: 0;
+     }
+   }
+ }

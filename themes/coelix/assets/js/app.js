@@ -98,33 +98,4 @@ $('.slick-vertical').slick({
 
 /* sponsors */
 
-// $('.js-block-info').slick({
-//   infinite: true,
-//   slidesToShow: 6,
-//   slidesToScroll: 1,
-//   arrows: false,
-//   dots: true,
-//   rtl: false,
-//   responsive: [
-//     {
-//       breakpoint: 999,
-//       settings: {
-//         dots: true,
-//         slidesToShow: 4,
-//         arrows: true,
-//         prevArrow: '<button type="button" class="slick-prev"></button>',
-//         nextArrow: '<button type="button" class="slick-next"></button>',
-//       },
-//     },
-//     {
-//       breakpoint: 769,
-//       settings: {
-//         dots: true,
-//         slidesToShow: 2,
-//         arrows: true,
-//         prevArrow: '<button type="button" class="slick-prev"></button>',
-//         nextArrow: '<button type="button" class="slick-next"></button>',
-//       },
-//     },
-//   ],
-// });
+// ag
