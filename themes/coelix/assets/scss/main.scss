@@ -173,6 +173,7 @@
 }
 .timers-item {
   padding: 13px 31px;
+  text-align: center;
   @media screen and (max-width: 768px) {
     padding: 12px 0;
     width: calc(70% / 4);
@@ -1175,22 +1176,17 @@
 }
 
 .slick-wrapper {
-}
-
-.slick-vertical .slick-slide {
   @media screen and (max-width: 768px) {
     padding-top: 50px;
-    padding-left: 60px;
+    position: relative;
+    display: flex !important;
+    z-index: 4;
+    height: 220px;
   }
-}
-.slider-item {
-  position: relative;
-  display: flex !important;
-  z-index: 4;
-  height: 220px;
   @media screen and (max-width: 768px) {
   }
 }
+
 .slider-title {
   padding-right: 60px;
 
@@ -1214,7 +1210,6 @@
     }
   }
 }
-
 .slider-date {
   transform: translate(-11px, -25px);
   .d {
@@ -1646,7 +1641,7 @@
     .google-maps {
       max-width: 746px;
       width: 100%;
-      height: 373px;
+      height: 405px;
     }
   }
 
@@ -1765,10 +1760,11 @@
 }
 
 #fld_8768091_1, //first name
-#fld_9970286_1, //last name
-#fld_313534_1, //subject
-#fld_6009157_1 {
+  #fld_9970286_1, //last name
+  #fld_313534_1, //subject
+  #fld_6009157_1 {
   //email
+
   max-width: 361px !important;
   width: 100% !important;
   height: 54px !important;
@@ -1812,7 +1808,7 @@
 
 // label
 .caldera-grid label {
-  display: none!important;
+  display: none !important;
   position: absolute !important;
   padding: 19px 0px 0px 25px !important;
   top: 0 !important;
@@ -1824,34 +1820,15 @@
 
   color: #b0b0b0 !important;
 }
+/* Hebwel */
 
 .rtl {
-  .languages {
-    left: 30px;
-    right: unset;
-  }
-  .site-header {
-    .nav {
-      margin-left: 120px;
-      margin-right: unset;
+  .section-one {
+    .container {
+      margin-right: 52.1%;
     }
-  }
-  .lang-option {
-    .language-switcher {
-      // margin-right: 0px;
-      // margin-left: 5px;
-      & img {
-        margin-right: 0px;
-        margin-left: 5px;
-      }
-    }
-  }
-  .arrow-down {
-    margin-left: unset;
-    margin-right: 9px;
   }
   .logo {
-    flex-direction: row-reverse;
     &__item-1 {
       & svg {
         margin-right: unset;
@@ -1860,20 +1837,99 @@
       }
     }
   }
-  .team__item{
+  .button__apply {
+    margin-left: 14px;
     margin-right: unset;
-    margin-left: 30px;
   }
-  .faq-block{
+  .main-info {
+    .medical-info {
+      .last {
+        &__block {
+          padding: 10px 20px 10px 0px;
+        }
+      }
+    }
+    &__startup {
+    }
+    &__startup-days {
+      margin-left: 70px;
+      margin-right: unset;
+
+      &::before {
+        right: unset;
+        left: -35px;
+      }
+    }
+  }
+  .ticket-block {
+    &__figure-background {
+      .top-left {
+        left: 0px;
+      }
+    }
+  }
+  .slider-title {
+    padding-right: 90px;
+  }
+  .btns-container {
+    left: 12%;
+  }
+  .slider-item {
+    flex-direction: row-reverse;
+  }
+  .slick-dots {
+    right: 104%;
+    width: 30px;
+    top: 10%;
+  }
+  .team__item {
+    margin-right: 30px;
+  }
+  .faq-block {
+    &__item {
+      margin-right: unset;
+      margin-left: 30px;
+    }
+    &__title {
+      & h3 {
+        width: 110%;
+      }
+      &::before {
+        top: 40px;
+        right: 0;
+      }
+    }
+  }
+
+  .contact-block {
+    &__right-position {
+      .google-maps {
+        height: 405px;
+      }
+    }
+    &__info-mail {
+      & a {
+        margin-right: 35px;
+      }
+    }
+  }
+  .sponsors-block {
     &__item {
       margin-right: unset;
       margin-left: 30px;
     }
   }
-  .sponsors-block{
-    &__item {
-      margin-right: unset;
-      margin-left: 30px;
+  .title {
+    &__form {
+      margin-right: 0px;
     }
+  }
+  .caldera-grid textarea.form-control {
+    padding-right: 4px;
+    height: auto;
+    margin-right: 16px !important;
+  }
+  #fld_7908577_1 {
+    margin-right: 31% !important;
   }
 }
