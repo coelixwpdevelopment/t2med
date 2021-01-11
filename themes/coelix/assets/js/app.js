@@ -122,6 +122,17 @@ $('.slick-vertical').slick({
 // }
 
 /* sponsors */
+if ( window.innerWidth <= 500 ) {
+  $('.js-block-info').slick({
+    infinite: true,
+    slidesToShow: 2,
+    slidesToScroll: 2,
+    arrows: true,
+    dots: true,
+    prevArrow: $('.sponsors-slider-arrow.prev'),
+    nextArrow: $('.sponsors-slider-arrow.next')
+  })
+}
 
 // $('.js-block-info').slick({
 //   infinite: true,

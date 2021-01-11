@@ -67,7 +67,7 @@
                   <li class="nav__link">
                      <a href="<?= get_home_url() . '/terms' ?>">Terms</a>
                   </li>
-                  <li class="nav__link">
+                  <!-- <li class="nav__link">
                      <a href="#">Mentors</a>
                   </li>
                   <li class="nav__link">
@@ -78,7 +78,7 @@
                   </li>
                   <li class="nav__link">
                      <a href="<?= get_home_url() . '/application-form' ?>">Log in</a>
-                  </li>
+                  </li> -->
                </ul>
             </nav>
             <div class="languages">
@@ -110,7 +110,7 @@
                         <?php endforeach; ?>
                      </ul>
                   </div>
-                  <?php } 
+                  <?php }
                   wpml_custom_switcher();
                   ?>
 
@@ -278,7 +278,7 @@
          $coelix_description = get_bloginfo('description', 'display');
          if ($coelix_description || is_customize_preview()) :
             ?>
-				<p class="site-description"><?php echo $coelix_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped 
+				<p class="site-description"><?php echo $coelix_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
                                           ?></p>
 			<?php endif; ?>
 		</div>.site-branding -->
