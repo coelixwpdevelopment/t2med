@@ -87,6 +87,7 @@ $('.slick-vertical').slick({
   vertical: true,
   verticalSwiping: true,
   slidesToShow: 1,
+  slidesToScroll: 1,
 
   speed: 700,
   autoplay: false,
@@ -94,7 +95,31 @@ $('.slick-vertical').slick({
 
   prevArrow: $('.btn-next'),
   nextArrow: $('.btn-prev'),
+
+  responsive: [
+    {
+      breakpoint: 500,
+      settings: {
+        verticalSwiping: false
+      }
+    }
+  ]
 });
+
+// Adaptive height for vertical slider
+// if ( window.innerWidth <= 768 ) {
+//   var maxHeight = -1;
+//   $('.slick-vertical .slick-slide').each(function() {
+//     if ($(this).height() > maxHeight) {
+//       maxHeight = $(this).height();
+//     }
+//   });
+//   $('.slick-vertical .slick-slide').each(function() {
+//     if ($(this).height() < maxHeight) {
+//       $(this).css('margin', Math.ceil((maxHeight-$(this).height())/2) + 'px 0');
+//     }
+//   });
+// }
 
 /* sponsors */
 
