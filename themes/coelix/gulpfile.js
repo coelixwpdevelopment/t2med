@@ -9,7 +9,7 @@ const sourcemaps = require('gulp-sourcemaps');
 
 function browsersync() {
   browserSync.init({
-    proxy: "http://t2med.loc"
+    proxy: "http://t2med"
   });
 }
 

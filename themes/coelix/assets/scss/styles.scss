@@ -103,6 +103,10 @@ section {
 body {
   line-height: 1;
   font-family: 'Assistant', sans-serif;
+  overflow-x: hidden;
+}
+html {
+  overflow-x: hidden;
 }
 ol,
 ul {
