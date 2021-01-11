@@ -1168,16 +1168,30 @@
 
 .slick-container {
   position: relative;
+  @media screen and (max-width: 768px) {
+    // position: relative;
+    // display: flex;
+    // flex-wrap: wrap;
+  }
 }
 
 .slick-wrapper {
 }
 
+.slick-vertical .slick-slide{
+  @media screen and (max-width: 768px){
+    padding-top: 50px;
+    padding-left: 60px;
+  }
+}
 .slider-item {
   position: relative;
   display: flex !important;
   z-index: 4;
   height: 220px;
+  @media screen and (max-width: 768px){
+
+  }
 }
 .slider-title {
   padding-right: 60px;
@@ -1224,6 +1238,9 @@
       @media screen and (max-width: 768px) {
         font-size: 22px;
       }
+    }
+    @media screen and (max-width: 768px){
+      
     }
   }
 
