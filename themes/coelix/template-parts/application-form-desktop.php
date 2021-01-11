@@ -107,7 +107,7 @@
         <div class="application-form-field application-form__application-form-field">
           <div class="application-form-field__label">*שם פרטי באנגלית</div>
           <div class="application-form-field__input">
-            <input class="application-form-text-field" type="text" name="eng_fname" placeholder="תילגנאב יטרפ םש" required />
+            <input class="application-form-text-field" type="text" name="eng_fname" placeholder="שם פרטי באנגלית" required />
           </div>
         </div><!-- application-form-field 1 END -->
 
@@ -122,7 +122,7 @@
         <div class="application-form-field application-form__application-form-field">
           <div class="application-form-field__label">*מספר טלפון נייד</div>
           <div class="application-form-field__input">
-            <input class="application-form-text-field" type="text" name="phone" placeholder="דיינ ןופלט רפסמ" required />
+            <input class="application-form-text-field" type="text" name="phone" placeholder="מספר טלפון נייד"required />
           </div>
 
         </div><!-- application-form-field 3 END -->

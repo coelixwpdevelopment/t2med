@@ -1,15 +1,15 @@
-@import '../../node_modules/jquery-nice-select/scss/nice-select.scss';
+@import "../../node_modules/jquery-nice-select/scss/nice-select.scss";
 
-@import 'vars.scss';
-@import 'styles.scss';
-@import 'terms.scss';
-@import 'header.scss';
-@import 'footer.scss';
-@import 'media.scss';
+@import "vars.scss";
+@import "styles.scss";
+@import "terms.scss";
+@import "header.scss";
+@import "footer.scss";
+@import "media.scss";
 
-@import 'utils/index.scss';
-@import 'components/index.scss';
-@import 'pages/index.scss';
+@import "utils/index.scss";
+@import "components/index.scss";
+@import "pages/index.scss";
 
 /* style all */
 *,
@@ -123,7 +123,6 @@
       line-height: 20px;
       margin: 0 auto;
       margin-bottom: 30px;
-      
     }
   }
 }
@@ -204,7 +203,7 @@
 
     &::before {
       position: absolute;
-      content: '';
+      content: "";
 
       top: 23px;
       right: -30px;
@@ -291,7 +290,7 @@
     }
 
     &::before {
-      content: '';
+      content: "";
       position: absolute;
 
       top: 5px;
@@ -567,7 +566,7 @@
   }
   .last {
     @media screen and (max-width: 768px) {
-      background: url('http://localhost/t2med/wp-content/uploads/2021/01/rectangle_group.png');
+      background: url("http://localhost/t2med/wp-content/uploads/2021/01/rectangle_group.png");
       background-size: 100%;
       background-repeat: no-repeat;
       padding: 26px 0 32px 0;
@@ -709,7 +708,7 @@
     box-shadow: 0px 40px 74px rgba(0, 0, 0, 0.22);
     @media screen and (max-width: 768px) {
       &:after {
-        content: '';
+        content: "";
         width: 100%;
         clear: both;
         display: block;
@@ -805,7 +804,7 @@
     box-shadow: 0px 40px 74px rgba(0, 0, 0, 0.22);
     @media screen and (max-width: 768px) {
       &:after {
-        content: '';
+        content: "";
         width: 100%;
         clear: both;
         display: block;
@@ -889,7 +888,7 @@
     box-shadow: 0px 40px 74px rgba(0, 0, 0, 0.22);
     @media screen and (max-width: 768px) {
       &:after {
-        content: '';
+        content: "";
         width: 100%;
         clear: both;
         display: block;
@@ -1112,7 +1111,7 @@
 .content {
   position: relative;
   padding: 156px 260px 140px 172px;
-  @media screen and (max-width: 768px){
+  @media screen and (max-width: 768px) {
     padding: 0;
     height: 420px;
   }
@@ -1122,7 +1121,7 @@
   width: 47px;
   position: absolute;
   bottom: 80px;
-  @media screen and (max-width: 768px){
+  @media screen and (max-width: 768px) {
     top: 27px;
     right: 29px;
   }
@@ -1133,11 +1132,11 @@
   flex-direction: column;
   bottom: 20px;
   left: -60px;
-  @media screen and (max-width:998px){
+  @media screen and (max-width: 998px) {
     bottom: 0px;
     left: 0px;
   }
-  @media screen and (max-width:768px){
+  @media screen and (max-width: 768px) {
     bottom: 25px;
     left: 20px;
   }
@@ -1156,28 +1155,41 @@
   width: 47px;
   height: 26px;
   transform: rotate(180deg);
-  background: url('../assets/images/arrow-active.png');
+  background: url("../assets/images/arrow-active.png");
   cursor: pointer;
 }
 .btn-prev {
   width: 47px;
   height: 26px;
-  background: url('../assets/images/arrow-active.png');
+  background: url("../assets/images/arrow-active.png");
   cursor: pointer;
 }
 
 .slick-container {
   position: relative;
+  @media screen and (max-width: 768px) {
+    // position: relative;
+    // display: flex;
+    // flex-wrap: wrap;
+  }
 }
 
 .slick-wrapper {
 }
 
+.slick-vertical .slick-slide {
+  @media screen and (max-width: 768px) {
+    padding-top: 50px;
+    padding-left: 60px;
+  }
+}
 .slider-item {
   position: relative;
   display: flex !important;
   z-index: 4;
   height: 220px;
+  @media screen and (max-width: 768px) {
+  }
 }
 .slider-title {
   padding-right: 60px;
@@ -1224,6 +1236,8 @@
       @media screen and (max-width: 768px) {
         font-size: 22px;
       }
+    }
+    @media screen and (max-width: 768px) {
     }
   }
 
@@ -1435,7 +1449,7 @@
 
     &:before {
       position: absolute;
-      content: '';
+      content: "";
       top: 47px;
       left: 0;
       max-width: 113px;
@@ -1454,7 +1468,7 @@
 
     &:before {
       position: absolute;
-      content: '';
+      content: "";
       top: 75px;
       left: 0;
       max-width: 113px;
@@ -1473,7 +1487,7 @@
 
     &:before {
       position: absolute;
-      content: '';
+      content: "";
       top: 75px;
       left: 0;
       max-width: 113px;
@@ -1506,7 +1520,7 @@
 
   .container {
     padding-bottom: 235px;
-    @media screen and (max-width: 768px){
+    @media screen and (max-width: 768px) {
       padding-bottom: 62px;
     }
   }
@@ -1525,7 +1539,7 @@
 .slick-prev {
   left: 0px;
 }
-.slick-next  {
+.slick-next {
   left: 0px;
 }
 .sponsors-block {
@@ -1652,7 +1666,7 @@
       left: 0;
       @media screen and (max-width: 768px) {
         top: -59%;
-        left: 92%
+        left: 92%;
       }
     }
 
@@ -1721,7 +1735,7 @@
     max-width: 1440px;
     margin: 0 auto;
     padding: 0 30px;
-    @media screen and (max-width: 768px){
+    @media screen and (max-width: 768px) {
       padding: 0 20px;
     }
   }
@@ -1734,7 +1748,7 @@
   margin: 0 auto;
   padding: 0 15px;
   padding-bottom: 80px;
-  @media screen and (max-width: 768px){
+  @media screen and (max-width: 768px) {
     padding: 0px;
   }
 }
@@ -1798,6 +1812,7 @@
 
 // label
 .caldera-grid label {
+  display: none!important;
   position: absolute !important;
   padding: 19px 0px 0px 25px !important;
   top: 0 !important;
@@ -1808,4 +1823,57 @@
   letter-spacing: 0.1px !important;
 
   color: #b0b0b0 !important;
+}
+
+.rtl {
+  .languages {
+    left: 30px;
+    right: unset;
+  }
+  .site-header {
+    .nav {
+      margin-left: 120px;
+      margin-right: unset;
+    }
+  }
+  .lang-option {
+    .language-switcher {
+      // margin-right: 0px;
+      // margin-left: 5px;
+      & img {
+        margin-right: 0px;
+        margin-left: 5px;
+      }
+    }
+  }
+  .arrow-down {
+    margin-left: unset;
+    margin-right: 9px;
+  }
+  .logo {
+    flex-direction: row-reverse;
+    &__item-1 {
+      & svg {
+        margin-right: unset;
+        margin-left: 15px;
+        display: block;
+      }
+    }
+  }
+  .team__item{
+    margin-right: unset;
+    margin-left: 30px;
+  }
+  .faq-block{
+    &__item {
+      margin-right: unset;
+      margin-left: 30px;
+    }
+  }
+  .sponsors-block{
+    &__item {
+      margin-right: unset;
+      margin-left: 30px;
+    }
+  }
 }
