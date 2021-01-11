@@ -56,7 +56,7 @@ get_header();
                </div>
                <div class="button">
                   <button class="button__apply"><?= __('Apply for T2MED', 'coelix') ?></button>
-                  <button class="button__login"><?= __('Login', 'coelix') ?></button>
+                  <!-- <button class="button__login"><?= __('Login', 'coelix') ?></button> -->
                </div>
             </div>
          </div>
@@ -101,7 +101,7 @@ get_header();
       </section>
 
 		<?php $section = get_field('awards'); ?>
-		
+
       <section class="section-three" style="background: url(<?= get_template_directory_uri().'/assets/images/bg-images-3.png' ?>) no-repeat;">
          <div class="container">
             <h2 class="title__awards"><?= $section ['title'] ?></h2>
@@ -170,7 +170,7 @@ get_header();
 							<?php foreach($section ['items'] as $key => $value): ?>
 
 								<div class="slider-item">
-								 
+
                            <div class="slider-title">
                               <h3><?= $value ['title'] ?></h3>
                               <p><?= $value ['text'] ?>
@@ -204,7 +204,7 @@ get_header();
             <div class="team">
 
 				<?php foreach($section ['item'] as $key => $value): ?>
-               
+
 					<div class="team__item">
                   <div class="team__item-img">
                      <img src="<?= $value ['img'] ?>" alt="">
@@ -244,7 +244,7 @@ get_header();
             <div class="faq-block">
 
 				<?php foreach($section ['item'] as $key => $value): ?>
-              
+
 				   <div class="faq-block__item">
                   <div class="faq-block__svg">
 							<img src="<?= $value ['icon'] ?>" alt="">
@@ -257,7 +257,7 @@ get_header();
                      </p>
                   </div>
                </div>
-					
+
 				<?php endforeach; ?>
 
             </div>
@@ -270,6 +270,10 @@ get_header();
          <div class="container">
             <h2 class="title__sponsors"><?= $section ['title'] ?></h2>
             <div class="sponsors-ticket">
+               <div class="sponsors-slider-arrows">
+                  <div class="sponsors-slider-arrow prev"><img src="<?= get_template_directory_uri() . '/assets/images/arrow-active.png' ?>" alt=""></div>
+                  <div class="sponsors-slider-arrow next"><img src="<?= get_template_directory_uri() . '/assets/images/arrow-active.png' ?>" alt=""></div>
+               </div>
                <div class="sponsors-block js-block-info">
 
 					<?php foreach($section ['item'] as $key => $value): ?>
@@ -277,7 +281,7 @@ get_header();
                   <div class="sponsors-block__item">
                      <img src="<?= $value ['img'] ?>" alt="">
                   </div>
-					
+
 					<?php endforeach; ?>
 
 					</div>
@@ -302,9 +306,9 @@ get_header();
                   </div>
                   <div class="contact-block__info">
                      <ul class="contact-block__info-item">
-							
+
 							<?php foreach($section ['item'] as $key => $value): ?>
-							
+
                         <li class="contact-block__info-mail">
 									<img src="<?= $value ['icon'] ?>" alt="">
                            <a href="<?= $value ['link'] ['url'] ?>"><?= $value ['link'] ['title'] ?></a>
